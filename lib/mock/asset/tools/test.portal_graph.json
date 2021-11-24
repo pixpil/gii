@@ -1,0 +1,53 @@
+{
+  "connections": [
+    {
+      "a": "SceneB.A",
+      "b": "SceneA.A",
+      "data": false
+    },
+    {
+      "a": "SceneC.A",
+      "b": "SceneA.C",
+      "data": false
+    },
+    {
+      "a": "SceneD.X",
+      "b": "SceneA.B",
+      "data": false
+    },
+    {
+      "a": "SceneA.A",
+      "b": "SceneA.C",
+      "data": false
+    }
+  ],
+  "group_meta": {
+    "SceneA": "DamHill"
+  },
+  "nodes": [
+    {
+      "fullname": "SceneA.A",
+      "name": "A"
+    },
+    {
+      "fullname": "SceneA.B",
+      "name": "B"
+    },
+    {
+      "fullname": "SceneA.C",
+      "name": "C"
+    },
+    {
+      "fullname": "SceneB.A",
+      "name": "A"
+    },
+    {
+      "fullname": "SceneC.A",
+      "name": "A"
+    },
+    {
+      "fullname": "SceneD.X",
+      "name": "X"
+    }
+  ]
+}

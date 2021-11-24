@@ -1,0 +1,109 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[				
+				"bash","start"
+			],
+			"name": "IDE",
+			"target": "exec_in_window",
+			"working_dir": "$project_path"
+		},
+
+		{
+			"cmd":
+			[				
+				"/Users/tommo/dev/shared/gii","run"
+			],
+			"name": "Run",
+			"target": "exec_in_window",
+			"working_dir": "$project_path"
+		},
+
+		{
+			"cmd":
+			[				
+				"/Users/tommo/dev/shared/gii", "run", "-b", "test"
+			],
+			"name": "Test",
+			"target": "exec_in_window",
+			"working_dir": "$project_path"
+		},
+
+		{
+			"cmd": ["python","-u", "$file"],
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"selector": "source.python",
+			"name": "Python32",
+			"working_dir": "$file_path",
+			"target": "exec_in_window"
+		}
+
+	],
+
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.otf",
+				"*.tff",
+				"*.fnt",
+				"*.png",
+				"*.l2",
+				"*.wav",
+				"*.aifc",
+				"*.caf",
+				"*.ogg",
+				"*.tmx",
+				"*.sxc",
+				
+				"*.pyo",
+				"*.pyc",
+				"*.so",
+				"*.o",
+
+				"*.pyxel",
+
+				".git*",
+				"host/ios/*.xcodeproj",
+				"BUILD_RESULT"
+			],
+			"folder_exclude_patterns":
+			[
+				"host/ios/build",
+				"host/ios/content",
+				"audio",
+				"cache",
+				"gii/test",
+				"gii/template",
+				"bin",
+				"env/config/cache"
+			],
+			"path": "./"
+		}
+	],
+	"settings":
+	{
+		"build_switcher_systems":
+		[
+			"IDE",
+			"Run",
+			"Test",
+			"Python32"
+
+		],
+		"show_panel_on_build": false,
+		"sublimeclang_options":
+		[
+			"-I.",
+			"-I/Users/tommo/dev/moai-dev/src"
+		],
+		// "sublimegdb_commandline": "gdb --interpreter=mi --args ../host/osx/moai main.lua",
+		// "sublimegdb_commandline": "gdb --interpreter=mi --args ../host/osx/moai test.lua",
+		"sublimegdb_commandline": "gdb --interpreter=mi --args /Users/tommo/prj/mdd/bin/osx/moai game/test.lua",
+		"sublimegdb_workingdir": "/Users/tommo/prj/mdd",
+		"tab_size": 2
+	}
+}

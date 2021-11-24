@@ -1,0 +1,13 @@
+def build( bld ):
+	target = bld.env.TARGET
+	sources = []
+	sources += bld.path.ant_glob( '*.cpp' )
+	sources += bld.path.ant_glob( 'imgui/*.cpp' )
+	bld.stlib( 
+		source = sources, 
+		target = 'IMGUI',
+		includes = '..',
+		export_includes = '.',
+		cflags   = [ '-Wno-format-security', '-stdlib=libstdc++' ],
+		use = [ 'MOAI' ]
+	)

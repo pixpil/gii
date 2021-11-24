@@ -1,0 +1,184 @@
+{
+  "connections": [
+    {
+      "cond": false, 
+      "from": "n4::n0", 
+      "to": "n4::n2", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n4::n1", 
+      "to": "n4::n0", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n6", 
+      "to": "n4", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n2::n1", 
+      "to": "n2::n0", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n2::n0", 
+      "to": "n4", 
+      "type": "spawn"
+    }, 
+    {
+      "cond": false, 
+      "from": "n2::n0", 
+      "to": "n2::n3", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n0", 
+      "to": "n2", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n2", 
+      "to": "n1", 
+      "type": "move"
+    }, 
+    {
+      "cond": "\n            ", 
+      "from": "n2::n3", 
+      "to": "n6", 
+      "type": "spawn"
+    }, 
+    {
+      "cond": false, 
+      "from": "n2::n3", 
+      "to": "n2::n2", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n4", 
+      "to": "n5", 
+      "type": "move"
+    }, 
+    {
+      "cond": false, 
+      "from": "n5", 
+      "to": "n4", 
+      "type": "move"
+    }, 
+    {
+      "cond": "FindSolomonKey", 
+      "from": "n2::n0", 
+      "to": "n3", 
+      "type": "spawn"
+    }
+  ], 
+  "nodes": [
+    {
+      "children": [], 
+      "fullname": "start", 
+      "id": "n0", 
+      "name": "start", 
+      "type": "node"
+    }, 
+    {
+      "children": [], 
+      "fullname": "stop", 
+      "id": "n1", 
+      "name": "stop", 
+      "type": "node"
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "fullname": "GroupTask.SubTaskA", 
+          "id": "n2::n0", 
+          "name": "SubTaskA", 
+          "type": "node"
+        }, 
+        {
+          "children": [], 
+          "fullname": "GroupTask.start", 
+          "id": "n2::n1", 
+          "name": "start", 
+          "type": "node"
+        }, 
+        {
+          "children": [], 
+          "fullname": "GroupTask.stop", 
+          "id": "n2::n2", 
+          "name": "stop", 
+          "type": "node"
+        }, 
+        {
+          "children": [], 
+          "fullname": "GroupTask.SubTaskB", 
+          "id": "n2::n3", 
+          "name": "SubTaskB", 
+          "type": "node"
+        }
+      ], 
+      "fullname": "GroupTask", 
+      "id": "n2", 
+      "name": "GroupTask", 
+      "type": "node"
+    }, 
+    {
+      "children": [], 
+      "fullname": "SideQuestA", 
+      "id": "n3", 
+      "name": "SideQuestA", 
+      "type": "node"
+    }, 
+    {
+      "children": [
+        {
+          "children": [], 
+          "fullname": "RepeatQuestB.Task", 
+          "id": "n4::n0", 
+          "name": "Task", 
+          "type": "node"
+        }, 
+        {
+          "children": [], 
+          "fullname": "RepeatQuestB.start", 
+          "id": "n4::n1", 
+          "name": "start", 
+          "type": "node"
+        }, 
+        {
+          "children": [], 
+          "fullname": "RepeatQuestB.stop", 
+          "id": "n4::n2", 
+          "name": "stop", 
+          "type": "node"
+        }
+      ], 
+      "fullname": "RepeatQuestB", 
+      "id": "n4", 
+      "name": "RepeatQuestB", 
+      "type": "node"
+    }, 
+    {
+      "children": [], 
+      "fullname": "RESET", 
+      "id": "n5", 
+      "name": "RESET", 
+      "type": "reset"
+    }, 
+    {
+      "children": [], 
+      "fullname": "ABORT", 
+      "id": "n6", 
+      "name": "ABORT", 
+      "type": "abort"
+    }
+  ]
+}

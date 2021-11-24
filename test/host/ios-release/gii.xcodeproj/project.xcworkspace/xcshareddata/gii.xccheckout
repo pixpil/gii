@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>88E4F0AC-C6AD-418F-8371-B176BAB46854</string>
+	<key>IDESourceControlProjectName</key>
+	<string>gii</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AA8E8234-34BE-4B6B-936A-58D51B3A4DCB</key>
+		<string>file:///Users/tommo/prj/repos/yaka.git/</string>
+		<key>F0CA6487-59C2-49DA-90AB-6AD0E76C6B4F</key>
+		<string>https://github.com/lsalzman/enet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>host/ios/gii.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AA8E8234-34BE-4B6B-936A-58D51B3A4DCB</key>
+		<string>../../../..</string>
+		<key>F0CA6487-59C2-49DA-90AB-6AD0E76C6B4F</key>
+		<string>../../../extension/enet</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>file:///Users/tommo/prj/repos/yaka.git/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AA8E8234-34BE-4B6B-936A-58D51B3A4DCB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0CA6487-59C2-49DA-90AB-6AD0E76C6B4F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>enet</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA8E8234-34BE-4B6B-936A-58D51B3A4DCB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yaka</string>
+		</dict>
+	</array>
+</dict>
+</plist>

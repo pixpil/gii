@@ -1,0 +1,6 @@
+{
+	"name"     : "doc",
+	"priority" : 1,
+	"help"     : "document generation tools ( TODO )",
+	"autoload" : false
+}

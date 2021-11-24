@@ -1,0 +1,6 @@
+{
+	"name" : "deploy",
+	"priority" : 3,
+	"help" : "deploy current project to target platform ( TODO )",
+	"autoload" : false
+}

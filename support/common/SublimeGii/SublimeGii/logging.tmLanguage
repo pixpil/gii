@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gii_log</string>
+		<string>BUILD_RESULT</string>
+	</array>
+	<key>name</key>
+	<string>Gii Logging</string>
+	
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>(\[(WARN *:.*|WARNING)\])(.*&gt;)?(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.warning.gii_log</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.position.gii_log</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>string.content.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>entry.warning.gii_log</string>
+		</dict>
+
+
+		<dict>
+			<key>match</key>
+			<string>^(.*:\d+:\d+:)(\s*error:.*)$</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.error.gii_log</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string.content.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>entry.error.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(\[ERROR(:.*)?\])(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.error.gii_log</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string.content.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>entry.error.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^(\[(STATUS|STAT|LOG|DEBUG)\s*(:.*)?\])</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.info.gii_log</string>
+				</dict>
+			</dict>	
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^@(.*):([0-9]*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.path.gii_log</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.line.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>support.content.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^(\[string.*\]|.*\.c?lua):([0-9]*):(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.path.gii_log</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.line.gii_log</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string.lua_error.gii_log</string>
+				</dict>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^(.*Error.*):(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.py_error.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>invalid.illegal.error_type.gii_log</string>
+		</dict>
+		
+		<dict>
+			<key>begin</key>
+			<string>(Traceback\s*\(.*\)):</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.traceback.gii_log</string>
+				</dict>
+			</dict>
+
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>^\s+File "(.*)", line ([0-9]*), in (.*)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.path.gii_log</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>constant.line.gii_log</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>variable.position.gii_log</string>
+						</dict>
+					</dict>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.*</string>
+					<key>name</key>
+					<string>comment.line.gii_log</string>
+				</dict>
+			</array>
+			
+			<key>end</key>
+			<string>^(?!\s+)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.block.end.glsl</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>support.block.glsl</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^Exception in.*(\(.*)$</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>comment.info.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>invalid.illegal.exception.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(stack traceback:|Traceback\s*\(.*\):)</string>
+			<key>name</key>
+			<string>support.traceback.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s+(\[C\])(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.path.gii_log</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.line.gii_log</string>
+				</dict>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s+(\[string .*?\]|.*?\.c?lua):([0-9]*)(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.path.gii_log</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.line.gii_log</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.position.gii_log</string>
+				</dict>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\-&gt;</string>
+			<key>name</key>
+			<string>keyword.arrow.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>&lt;(\w*:)([^&gt]*)&gt;</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.typename.gii_log</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.address.gii_log</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>keyword.operator.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>&lt;[\s\w]*&gt;</string>
+			<key>name</key>
+			<string>support.tag.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w)(true|false|True|False|nil|None)(?!\w)</string>
+			<key>name</key>
+			<string>constant.value.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;![\d.])\s0x[a-fA-F\d]+|\b\d+(\.\d+)?([eE]-?\d+)?|\.\d+([eE]-?\d+)?</string>
+			<key>name</key>
+			<string>constant.numeric.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>/?[\w-.]+((/|::)[\w-.@]+)+</string>
+			<key>name</key>
+			<string>variable.path.gii_log</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>|\[|\]|"|'|:|=|\+|-|%|#|\*|\/|\^|==?|~=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)</string>
+			<key>name</key>
+			<string>keyword.operator.gii_log</string>
+		</dict>
+
+	</array>
+	
+	<key>scopeName</key>
+	<string>source.gii_log</string>
+	<key>uuid</key>
+	<string>321006af-1831-4994-977d-16a726af99bb</string>
+</dict>
+</plist>

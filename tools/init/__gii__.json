@@ -1,0 +1,6 @@
+{
+	"name" : "init",
+	"priority" : 2,
+	"help" : "initialize a new project in current directory",
+	"autoload" : false
+}

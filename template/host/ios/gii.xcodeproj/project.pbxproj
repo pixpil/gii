@@ -1,0 +1,1068 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03CC90A913B3C37C00B2724C /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03CC90A813B3C37C00B2724C /* main.mm */; };
+		03CC90F813B3C45A00B2724C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC90F713B3C45A00B2724C /* OpenGLES.framework */; };
+		03CC90FE13B3C46A00B2724C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC90FD13B3C46A00B2724C /* CoreLocation.framework */; };
+		03CC910413B3C47600B2724C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC910313B3C47600B2724C /* CoreAudio.framework */; };
+		03CC910C13B3C48400B2724C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC910B13B3C48400B2724C /* AudioToolbox.framework */; };
+		03CC911C13B3C49400B2724C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC911B13B3C49400B2724C /* SystemConfiguration.framework */; };
+		03CC912213B3C4A400B2724C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC912113B3C4A400B2724C /* QuartzCore.framework */; };
+		03CC912C13B3C4C000B2724C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CC912B13B3C4C000B2724C /* StoreKit.framework */; };
+		040FDAB71822B2A20051A2D9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040FDAB61822B2A20051A2D9 /* CoreMedia.framework */; };
+		040FDAB91822B2B60051A2D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040FDAB81822B2B60051A2D9 /* AVFoundation.framework */; };
+		040FDADF1822BC7F0051A2D9 /* aku_modules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040FDAD41822BC7F0051A2D9 /* aku_modules.cpp */; };
+		040FDAE01822BC7F0051A2D9 /* aku_modules_custom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040FDAD71822BC7F0051A2D9 /* aku_modules_custom.cpp */; };
+		040FDAE11822BC7F0051A2D9 /* aku_modules_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040FDADA1822BC7F0051A2D9 /* aku_modules_ios.mm */; };
+		040FDAE51822BE910051A2D9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040FDAE41822BE910051A2D9 /* AdSupport.framework */; };
+		0443E52C1A8DE2250090F317 /* libCrittercism_v4_3_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0443E52B1A8DE2250090F317 /* libCrittercism_v4_3_3.a */; };
+		0443E5C21A8DE2850090F317 /* extensionClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E52F1A8DE2850090F317 /* extensionClasses.cpp */; };
+		0443E5C31A8DE2850090F317 /* TMInfluenceMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5311A8DE2850090F317 /* TMInfluenceMap.cpp */; };
+		0443E5C41A8DE2850090F317 /* TMPathGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5331A8DE2850090F317 /* TMPathGrid.cpp */; };
+		0443E5C51A8DE2850090F317 /* MOAISceneContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5351A8DE2850090F317 /* MOAISceneContext.cpp */; };
+		0443E5C61A8DE2850090F317 /* MOCKNetworkHost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5371A8DE2850090F317 /* MOCKNetworkHost.cpp */; };
+		0443E5C71A8DE2850090F317 /* MOAISpineSkeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5381A8DE2850090F317 /* MOAISpineSkeleton.cpp */; };
+		0443E5C81A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5391A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.cpp */; };
+		0443E5C91A8DE2850090F317 /* MOAISectionDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E53A1A8DE2850090F317 /* MOAISectionDeck.cpp */; };
+		0443E5CF1A8DE2850090F317 /* callbacks.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5421A8DE2850090F317 /* callbacks.c */; };
+		0443E5D01A8DE2850090F317 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5431A8DE2850090F317 /* compress.c */; };
+		0443E5DA1A8DE2850090F317 /* host.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E54E1A8DE2850090F317 /* host.c */; };
+		0443E5DC1A8DE2850090F317 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E55B1A8DE2850090F317 /* list.c */; };
+		0443E5DE1A8DE2850090F317 /* packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E55E1A8DE2850090F317 /* packet.c */; };
+		0443E5DF1A8DE2850090F317 /* peer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E55F1A8DE2850090F317 /* peer.c */; };
+		0443E5E01A8DE2850090F317 /* protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5601A8DE2850090F317 /* protocol.c */; };
+		0443E5E11A8DE2850090F317 /* unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5611A8DE2850090F317 /* unix.c */; };
+		0443E5E51A8DE2850090F317 /* MOCKNetworkRPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5661A8DE2850090F317 /* MOCKNetworkRPC.cpp */; };
+		0443E5E61A8DE2850090F317 /* MOAISpineAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5671A8DE2850090F317 /* MOAISpineAnimation.cpp */; };
+		0443E5E71A8DE2850090F317 /* MOAIViewPinTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5681A8DE2850090F317 /* MOAIViewPinTransform.cpp */; };
+		0443E5E81A8DE2850090F317 /* MOAISpineSkeletonData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E56A1A8DE2850090F317 /* MOAISpineSkeletonData.cpp */; };
+		0443E5E91A8DE2850090F317 /* MOAIGradientDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E56C1A8DE2850090F317 /* MOAIGradientDeck.cpp */; };
+		0443E5EA1A8DE2850090F317 /* MOAIImageLoadTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E56F1A8DE2850090F317 /* MOAIImageLoadTask.cpp */; };
+		0443E5EB1A8DE2850090F317 /* MOAISpineAtlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5711A8DE2850090F317 /* MOAISpineAtlas.cpp */; };
+		0443E5EC1A8DE2850090F317 /* MOCKProp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5741A8DE2850090F317 /* MOCKProp.cpp */; };
+		0443E5ED1A8DE2850090F317 /* MOAIManualTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5751A8DE2850090F317 /* MOAIManualTimer.cpp */; };
+		0443E5EE1A8DE2850090F317 /* YAKAHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5771A8DE2850090F317 /* YAKAHelper.cpp */; };
+		0443E5EF1A8DE2850090F317 /* MOAITrailProp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5781A8DE2850090F317 /* MOAITrailProp.cpp */; };
+		0443E5F01A8DE2850090F317 /* MOAISpineAnimationMixTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E57C1A8DE2850090F317 /* MOAISpineAnimationMixTable.cpp */; };
+		0443E5F11A8DE2850090F317 /* Animation.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E59B1A8DE2850090F317 /* Animation.c */; };
+		0443E5F21A8DE2850090F317 /* AnimationState.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E59C1A8DE2850090F317 /* AnimationState.c */; };
+		0443E5F31A8DE2850090F317 /* AnimationStateData.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E59D1A8DE2850090F317 /* AnimationStateData.c */; };
+		0443E5F41A8DE2850090F317 /* Atlas.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E59E1A8DE2850090F317 /* Atlas.c */; };
+		0443E5F51A8DE2850090F317 /* AtlasAttachmentLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E59F1A8DE2850090F317 /* AtlasAttachmentLoader.c */; };
+		0443E5F61A8DE2850090F317 /* Attachment.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A01A8DE2850090F317 /* Attachment.c */; };
+		0443E5F71A8DE2850090F317 /* AttachmentLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A11A8DE2850090F317 /* AttachmentLoader.c */; };
+		0443E5F81A8DE2850090F317 /* Bone.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A21A8DE2850090F317 /* Bone.c */; };
+		0443E5F91A8DE2850090F317 /* BoneData.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A31A8DE2850090F317 /* BoneData.c */; };
+		0443E5FA1A8DE2850090F317 /* BoundingBoxAttachment.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A41A8DE2850090F317 /* BoundingBoxAttachment.c */; };
+		0443E5FB1A8DE2850090F317 /* Event.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A51A8DE2850090F317 /* Event.c */; };
+		0443E5FC1A8DE2850090F317 /* EventData.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A61A8DE2850090F317 /* EventData.c */; };
+		0443E5FD1A8DE2850090F317 /* Json.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A71A8DE2850090F317 /* Json.c */; };
+		0443E5FE1A8DE2850090F317 /* MeshAttachment.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5A91A8DE2850090F317 /* MeshAttachment.c */; };
+		0443E5FF1A8DE2850090F317 /* RegionAttachment.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5AA1A8DE2850090F317 /* RegionAttachment.c */; };
+		0443E6001A8DE2850090F317 /* Skeleton.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5AB1A8DE2850090F317 /* Skeleton.c */; };
+		0443E6011A8DE2850090F317 /* SkeletonBounds.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5AC1A8DE2850090F317 /* SkeletonBounds.c */; };
+		0443E6021A8DE2850090F317 /* SkeletonData.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5AD1A8DE2850090F317 /* SkeletonData.c */; };
+		0443E6031A8DE2850090F317 /* SkeletonJson.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5AE1A8DE2850090F317 /* SkeletonJson.c */; };
+		0443E6041A8DE2850090F317 /* Skin.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5AF1A8DE2850090F317 /* Skin.c */; };
+		0443E6051A8DE2850090F317 /* SkinnedMeshAttachment.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5B01A8DE2850090F317 /* SkinnedMeshAttachment.c */; };
+		0443E6061A8DE2850090F317 /* Slot.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5B11A8DE2850090F317 /* Slot.c */; };
+		0443E6071A8DE2850090F317 /* SlotData.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5B21A8DE2850090F317 /* SlotData.c */; };
+		0443E6081A8DE2850090F317 /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5B31A8DE2850090F317 /* extension.c */; };
+		0443E60A1A8DE2850090F317 /* MOCKNetworkMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5B81A8DE2850090F317 /* MOCKNetworkMessage.cpp */; };
+		0443E60B1A8DE2850090F317 /* MOCKNetworkStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5B91A8DE2850090F317 /* MOCKNetworkStream.cpp */; };
+		0443E60C1A8DE2850090F317 /* MOCKNetworkPeer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5BB1A8DE2850090F317 /* MOCKNetworkPeer.cpp */; };
+		0443E60D1A8DE2850090F317 /* MOCKNetworkBroadcast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5BC1A8DE2850090F317 /* MOCKNetworkBroadcast.cpp */; };
+		0443E60E1A8DE2850090F317 /* MOCKNetworkView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5BE1A8DE2850090F317 /* MOCKNetworkView.cpp */; };
+		0443E60F1A8DE2850090F317 /* MOAIRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443E5C01A8DE2850090F317 /* MOAIRandom.cpp */; };
+		0443E6111A8DEB750090F317 /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 0443E6101A8DEB750090F317 /* lpeg.c */; };
+		04A7ABEC18A5FB150086067C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7ABEB18A5FB150086067C /* Images.xcassets */; };
+		04CD811B17F02CC200DBD3AA /* content in Resources */ = {isa = PBXBuildFile; fileRef = 049670F115F397C5008BA8D4 /* content */; };
+		04CD935819E69A7D003E708F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CD935719E69A7D003E708F /* CoreMotion.framework */; };
+		04D2EF2C19888ECF00064274 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D2EF2B19888ECF00064274 /* GameKit.framework */; };
+		04D5484D1A8DD526003395E3 /* MOAIAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D548481A8DD526003395E3 /* MOAIAppDelegate.mm */; };
+		04D5484E1A8DD526003395E3 /* MOAIView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D5484A1A8DD526003395E3 /* MOAIView.mm */; };
+		04D5484F1A8DD526003395E3 /* MOAIViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D5484C1A8DD526003395E3 /* MOAIViewController.mm */; };
+		0711070513C637F000EE7C53 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0711070413C637F000EE7C53 /* CoreTelephony.framework */; };
+		079530CE1447A0FF00143A72 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079530CD1447A0FF00143A72 /* MediaPlayer.framework */; };
+		07EF3E44147BAAA5006CFDCE /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF3E43147BAAA5006CFDCE /* Twitter.framework */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		665383F7160A8466003D5529 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665383F6160A8466003D5529 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		037ED45813CD1FD2009CBA72 /* package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
+		03CC905513B3C1B700B2724C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03CC90A813B3C37C00B2724C /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		03CC90AA13B3C38800B2724C /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		03CC90F713B3C45A00B2724C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		03CC90FD13B3C46A00B2724C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		03CC910313B3C47600B2724C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		03CC910B13B3C48400B2724C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03CC911B13B3C49400B2724C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		03CC912113B3C4A400B2724C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		03CC912B13B3C4C000B2724C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		040FDAB61822B2A20051A2D9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		040FDAB81822B2B60051A2D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		040FDAD41822BC7F0051A2D9 /* aku_modules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aku_modules.cpp; sourceTree = "<group>"; };
+		040FDAD51822BC7F0051A2D9 /* aku_modules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aku_modules.h; sourceTree = "<group>"; };
+		040FDAD61822BC7F0051A2D9 /* aku_modules_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aku_modules_config.h; sourceTree = "<group>"; };
+		040FDAD71822BC7F0051A2D9 /* aku_modules_custom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aku_modules_custom.cpp; sourceTree = "<group>"; };
+		040FDAD81822BC7F0051A2D9 /* aku_modules_custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aku_modules_custom.h; sourceTree = "<group>"; };
+		040FDAD91822BC7F0051A2D9 /* aku_modules_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aku_modules_ios.h; sourceTree = "<group>"; };
+		040FDADA1822BC7F0051A2D9 /* aku_modules_ios.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = aku_modules_ios.mm; sourceTree = "<group>"; };
+		040FDADB1822BC7F0051A2D9 /* aku_modules_ios_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aku_modules_ios_config.h; sourceTree = "<group>"; };
+		040FDAE41822BE910051A2D9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		0417DD8D17F0227900733CC3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0417DD8E17F0227900733CC3 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		0417DD8F17F0227900733CC3 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		0417DD9017F0227900733CC3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0417DD9117F0227900733CC3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0417DD9217F0227900733CC3 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		0417DD9317F0227900733CC3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		0417DD9417F0227900733CC3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		0417DD9517F0227900733CC3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		0417DD9617F0227900733CC3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		0417DD9717F0227900733CC3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0417DD9817F0227900733CC3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0417DD9917F0227900733CC3 /* launch320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch320x480.png; sourceTree = "<group>"; };
+		0417DD9A17F0227900733CC3 /* launch640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch640x1136.png; sourceTree = "<group>"; };
+		0417DD9B17F0227900733CC3 /* launch640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch640x960.png; sourceTree = "<group>"; };
+		0417DD9C17F0227900733CC3 /* launch768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch768x1024.png; sourceTree = "<group>"; };
+		0417DD9D17F0227900733CC3 /* launch768x1024@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch768x1024@2x.png"; sourceTree = "<group>"; };
+		04398FD315E9F591004CF6EF /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry.a; path = ../../../lib/libFlurry.a; sourceTree = "<group>"; };
+		0443E52B1A8DE2250090F317 /* libCrittercism_v4_3_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCrittercism_v4_3_3.a; path = "../../../../../../../Users/tommo/dev/moai-dev/3rdparty/crittercism-4.3.3/CrittercismSDK/libCrittercism_v4_3_3.a"; sourceTree = "<group>"; };
+		0443E52E1A8DE2850090F317 /* MOAIManualTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIManualTimer.h; path = ../extension/MOAIManualTimer.h; sourceTree = "<group>"; };
+		0443E52F1A8DE2850090F317 /* extensionClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = extensionClasses.cpp; path = ../extension/extensionClasses.cpp; sourceTree = "<group>"; };
+		0443E5301A8DE2850090F317 /* TMInfluenceMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMInfluenceMap.h; path = ../extension/TMInfluenceMap.h; sourceTree = "<group>"; };
+		0443E5311A8DE2850090F317 /* TMInfluenceMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TMInfluenceMap.cpp; path = ../extension/TMInfluenceMap.cpp; sourceTree = "<group>"; };
+		0443E5321A8DE2850090F317 /* TMPathGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMPathGrid.h; path = ../extension/TMPathGrid.h; sourceTree = "<group>"; };
+		0443E5331A8DE2850090F317 /* TMPathGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TMPathGrid.cpp; path = ../extension/TMPathGrid.cpp; sourceTree = "<group>"; };
+		0443E5341A8DE2850090F317 /* extensionClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extensionClasses.h; path = ../extension/extensionClasses.h; sourceTree = "<group>"; };
+		0443E5351A8DE2850090F317 /* MOAISceneContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISceneContext.cpp; path = ../extension/MOAISceneContext.cpp; sourceTree = "<group>"; };
+		0443E5361A8DE2850090F317 /* MOAISceneContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISceneContext.h; path = ../extension/MOAISceneContext.h; sourceTree = "<group>"; };
+		0443E5371A8DE2850090F317 /* MOCKNetworkHost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkHost.cpp; path = ../extension/MOCKNetworkHost.cpp; sourceTree = "<group>"; };
+		0443E5381A8DE2850090F317 /* MOAISpineSkeleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISpineSkeleton.cpp; path = ../extension/MOAISpineSkeleton.cpp; sourceTree = "<group>"; };
+		0443E5391A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAIGfxMaskedQuadListDeck2D.cpp; path = ../extension/MOAIGfxMaskedQuadListDeck2D.cpp; sourceTree = "<group>"; };
+		0443E53A1A8DE2850090F317 /* MOAISectionDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISectionDeck.cpp; path = ../extension/MOAISectionDeck.cpp; sourceTree = "<group>"; };
+		0443E5421A8DE2850090F317 /* callbacks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = callbacks.c; sourceTree = "<group>"; };
+		0443E5431A8DE2850090F317 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		0443E54E1A8DE2850090F317 /* host.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = host.c; sourceTree = "<group>"; };
+		0443E55B1A8DE2850090F317 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		0443E55E1A8DE2850090F317 /* packet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = packet.c; sourceTree = "<group>"; };
+		0443E55F1A8DE2850090F317 /* peer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = peer.c; sourceTree = "<group>"; };
+		0443E5601A8DE2850090F317 /* protocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = protocol.c; sourceTree = "<group>"; };
+		0443E5611A8DE2850090F317 /* unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unix.c; sourceTree = "<group>"; };
+		0443E5641A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIGfxMaskedQuadListDeck2D.h; path = ../extension/MOAIGfxMaskedQuadListDeck2D.h; sourceTree = "<group>"; };
+		0443E5661A8DE2850090F317 /* MOCKNetworkRPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkRPC.cpp; path = ../extension/MOCKNetworkRPC.cpp; sourceTree = "<group>"; };
+		0443E5671A8DE2850090F317 /* MOAISpineAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISpineAnimation.cpp; path = ../extension/MOAISpineAnimation.cpp; sourceTree = "<group>"; };
+		0443E5681A8DE2850090F317 /* MOAIViewPinTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAIViewPinTransform.cpp; path = ../extension/MOAIViewPinTransform.cpp; sourceTree = "<group>"; };
+		0443E5691A8DE2850090F317 /* MOAIViewPinTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIViewPinTransform.h; path = ../extension/MOAIViewPinTransform.h; sourceTree = "<group>"; };
+		0443E56A1A8DE2850090F317 /* MOAISpineSkeletonData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISpineSkeletonData.cpp; path = ../extension/MOAISpineSkeletonData.cpp; sourceTree = "<group>"; };
+		0443E56B1A8DE2850090F317 /* MOAISpineSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISpineSkeleton.h; path = ../extension/MOAISpineSkeleton.h; sourceTree = "<group>"; };
+		0443E56C1A8DE2850090F317 /* MOAIGradientDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAIGradientDeck.cpp; path = ../extension/MOAIGradientDeck.cpp; sourceTree = "<group>"; };
+		0443E56D1A8DE2850090F317 /* MOAISpineAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISpineAnimation.h; path = ../extension/MOAISpineAnimation.h; sourceTree = "<group>"; };
+		0443E56E1A8DE2850090F317 /* MOAISpineSkeletonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISpineSkeletonData.h; path = ../extension/MOAISpineSkeletonData.h; sourceTree = "<group>"; };
+		0443E56F1A8DE2850090F317 /* MOAIImageLoadTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAIImageLoadTask.cpp; path = ../extension/MOAIImageLoadTask.cpp; sourceTree = "<group>"; };
+		0443E5701A8DE2850090F317 /* MOCKNetworkBroadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkBroadcast.h; path = ../extension/MOCKNetworkBroadcast.h; sourceTree = "<group>"; };
+		0443E5711A8DE2850090F317 /* MOAISpineAtlas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISpineAtlas.cpp; path = ../extension/MOAISpineAtlas.cpp; sourceTree = "<group>"; };
+		0443E5721A8DE2850090F317 /* MOAISpineAtlas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISpineAtlas.h; path = ../extension/MOAISpineAtlas.h; sourceTree = "<group>"; };
+		0443E5731A8DE2850090F317 /* MOAISectionDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISectionDeck.h; path = ../extension/MOAISectionDeck.h; sourceTree = "<group>"; };
+		0443E5741A8DE2850090F317 /* MOCKProp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKProp.cpp; path = ../extension/MOCKProp.cpp; sourceTree = "<group>"; };
+		0443E5751A8DE2850090F317 /* MOAIManualTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAIManualTimer.cpp; path = ../extension/MOAIManualTimer.cpp; sourceTree = "<group>"; };
+		0443E5761A8DE2850090F317 /* YAKAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAKAHelper.h; path = ../extension/YAKAHelper.h; sourceTree = "<group>"; };
+		0443E5771A8DE2850090F317 /* YAKAHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YAKAHelper.cpp; path = ../extension/YAKAHelper.cpp; sourceTree = "<group>"; };
+		0443E5781A8DE2850090F317 /* MOAITrailProp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAITrailProp.cpp; path = ../extension/MOAITrailProp.cpp; sourceTree = "<group>"; };
+		0443E5791A8DE2850090F317 /* MOAITrailProp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAITrailProp.h; path = ../extension/MOAITrailProp.h; sourceTree = "<group>"; };
+		0443E57A1A8DE2850090F317 /* MOAIImageLoadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIImageLoadTask.h; path = ../extension/MOAIImageLoadTask.h; sourceTree = "<group>"; };
+		0443E57B1A8DE2850090F317 /* MOAIGradientDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIGradientDeck.h; path = ../extension/MOAIGradientDeck.h; sourceTree = "<group>"; };
+		0443E57C1A8DE2850090F317 /* MOAISpineAnimationMixTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAISpineAnimationMixTable.cpp; path = ../extension/MOAISpineAnimationMixTable.cpp; sourceTree = "<group>"; };
+		0443E57D1A8DE2850090F317 /* MOAISpineAnimationMixTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAISpineAnimationMixTable.h; path = ../extension/MOAISpineAnimationMixTable.h; sourceTree = "<group>"; };
+		0443E5811A8DE2850090F317 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		0443E5821A8DE2850090F317 /* AnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationState.h; sourceTree = "<group>"; };
+		0443E5831A8DE2850090F317 /* AnimationStateData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStateData.h; sourceTree = "<group>"; };
+		0443E5841A8DE2850090F317 /* Atlas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atlas.h; sourceTree = "<group>"; };
+		0443E5851A8DE2850090F317 /* AtlasAttachmentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasAttachmentLoader.h; sourceTree = "<group>"; };
+		0443E5861A8DE2850090F317 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
+		0443E5871A8DE2850090F317 /* AttachmentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentLoader.h; sourceTree = "<group>"; };
+		0443E5881A8DE2850090F317 /* Bone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bone.h; sourceTree = "<group>"; };
+		0443E5891A8DE2850090F317 /* BoneData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoneData.h; sourceTree = "<group>"; };
+		0443E58A1A8DE2850090F317 /* BoundingBoxAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBoxAttachment.h; sourceTree = "<group>"; };
+		0443E58B1A8DE2850090F317 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		0443E58C1A8DE2850090F317 /* EventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventData.h; sourceTree = "<group>"; };
+		0443E58D1A8DE2850090F317 /* MeshAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshAttachment.h; sourceTree = "<group>"; };
+		0443E58E1A8DE2850090F317 /* RegionAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionAttachment.h; sourceTree = "<group>"; };
+		0443E58F1A8DE2850090F317 /* Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
+		0443E5901A8DE2850090F317 /* SkeletonBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkeletonBounds.h; sourceTree = "<group>"; };
+		0443E5911A8DE2850090F317 /* SkeletonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkeletonData.h; sourceTree = "<group>"; };
+		0443E5921A8DE2850090F317 /* SkeletonJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkeletonJson.h; sourceTree = "<group>"; };
+		0443E5931A8DE2850090F317 /* Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skin.h; sourceTree = "<group>"; };
+		0443E5941A8DE2850090F317 /* SkinnedMeshAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinnedMeshAttachment.h; sourceTree = "<group>"; };
+		0443E5951A8DE2850090F317 /* Slot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slot.h; sourceTree = "<group>"; };
+		0443E5961A8DE2850090F317 /* SlotData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlotData.h; sourceTree = "<group>"; };
+		0443E5971A8DE2850090F317 /* extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extension.h; sourceTree = "<group>"; };
+		0443E5981A8DE2850090F317 /* spine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spine.h; sourceTree = "<group>"; };
+		0443E59B1A8DE2850090F317 /* Animation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Animation.c; sourceTree = "<group>"; };
+		0443E59C1A8DE2850090F317 /* AnimationState.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AnimationState.c; sourceTree = "<group>"; };
+		0443E59D1A8DE2850090F317 /* AnimationStateData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AnimationStateData.c; sourceTree = "<group>"; };
+		0443E59E1A8DE2850090F317 /* Atlas.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Atlas.c; sourceTree = "<group>"; };
+		0443E59F1A8DE2850090F317 /* AtlasAttachmentLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AtlasAttachmentLoader.c; sourceTree = "<group>"; };
+		0443E5A01A8DE2850090F317 /* Attachment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Attachment.c; sourceTree = "<group>"; };
+		0443E5A11A8DE2850090F317 /* AttachmentLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AttachmentLoader.c; sourceTree = "<group>"; };
+		0443E5A21A8DE2850090F317 /* Bone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bone.c; sourceTree = "<group>"; };
+		0443E5A31A8DE2850090F317 /* BoneData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BoneData.c; sourceTree = "<group>"; };
+		0443E5A41A8DE2850090F317 /* BoundingBoxAttachment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BoundingBoxAttachment.c; sourceTree = "<group>"; };
+		0443E5A51A8DE2850090F317 /* Event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Event.c; sourceTree = "<group>"; };
+		0443E5A61A8DE2850090F317 /* EventData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EventData.c; sourceTree = "<group>"; };
+		0443E5A71A8DE2850090F317 /* Json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Json.c; sourceTree = "<group>"; };
+		0443E5A81A8DE2850090F317 /* Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Json.h; sourceTree = "<group>"; };
+		0443E5A91A8DE2850090F317 /* MeshAttachment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MeshAttachment.c; sourceTree = "<group>"; };
+		0443E5AA1A8DE2850090F317 /* RegionAttachment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RegionAttachment.c; sourceTree = "<group>"; };
+		0443E5AB1A8DE2850090F317 /* Skeleton.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Skeleton.c; sourceTree = "<group>"; };
+		0443E5AC1A8DE2850090F317 /* SkeletonBounds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SkeletonBounds.c; sourceTree = "<group>"; };
+		0443E5AD1A8DE2850090F317 /* SkeletonData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SkeletonData.c; sourceTree = "<group>"; };
+		0443E5AE1A8DE2850090F317 /* SkeletonJson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SkeletonJson.c; sourceTree = "<group>"; };
+		0443E5AF1A8DE2850090F317 /* Skin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Skin.c; sourceTree = "<group>"; };
+		0443E5B01A8DE2850090F317 /* SkinnedMeshAttachment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SkinnedMeshAttachment.c; sourceTree = "<group>"; };
+		0443E5B11A8DE2850090F317 /* Slot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Slot.c; sourceTree = "<group>"; };
+		0443E5B21A8DE2850090F317 /* SlotData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SlotData.c; sourceTree = "<group>"; };
+		0443E5B31A8DE2850090F317 /* extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extension.c; sourceTree = "<group>"; };
+		0443E5B51A8DE2850090F317 /* MOCKNetworkHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkHost.h; path = ../extension/MOCKNetworkHost.h; sourceTree = "<group>"; };
+		0443E5B61A8DE2850090F317 /* MOCKNetworkRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkRPC.h; path = ../extension/MOCKNetworkRPC.h; sourceTree = "<group>"; };
+		0443E5B71A8DE2850090F317 /* MOCKNetworkMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkMessage.h; path = ../extension/MOCKNetworkMessage.h; sourceTree = "<group>"; };
+		0443E5B81A8DE2850090F317 /* MOCKNetworkMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkMessage.cpp; path = ../extension/MOCKNetworkMessage.cpp; sourceTree = "<group>"; };
+		0443E5B91A8DE2850090F317 /* MOCKNetworkStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkStream.cpp; path = ../extension/MOCKNetworkStream.cpp; sourceTree = "<group>"; };
+		0443E5BA1A8DE2850090F317 /* MOCKNetworkStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkStream.h; path = ../extension/MOCKNetworkStream.h; sourceTree = "<group>"; };
+		0443E5BB1A8DE2850090F317 /* MOCKNetworkPeer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkPeer.cpp; path = ../extension/MOCKNetworkPeer.cpp; sourceTree = "<group>"; };
+		0443E5BC1A8DE2850090F317 /* MOCKNetworkBroadcast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkBroadcast.cpp; path = ../extension/MOCKNetworkBroadcast.cpp; sourceTree = "<group>"; };
+		0443E5BD1A8DE2850090F317 /* MOCKNetworkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkView.h; path = ../extension/MOCKNetworkView.h; sourceTree = "<group>"; };
+		0443E5BE1A8DE2850090F317 /* MOCKNetworkView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOCKNetworkView.cpp; path = ../extension/MOCKNetworkView.cpp; sourceTree = "<group>"; };
+		0443E5BF1A8DE2850090F317 /* MOCKNetworkPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOCKNetworkPeer.h; path = ../extension/MOCKNetworkPeer.h; sourceTree = "<group>"; };
+		0443E5C01A8DE2850090F317 /* MOAIRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MOAIRandom.cpp; path = ../extension/MOAIRandom.cpp; sourceTree = "<group>"; };
+		0443E5C11A8DE2850090F317 /* MOAIRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIRandom.h; path = ../extension/MOAIRandom.h; sourceTree = "<group>"; };
+		0443E6101A8DEB750090F317 /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = "../extension/lpeg-0.10.2/lpeg.c"; sourceTree = "<group>"; };
+		049670F115F397C5008BA8D4 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = content; sourceTree = "<group>"; };
+		04A7ABEB18A5FB150086067C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = app/Images.xcassets; sourceTree = "<group>"; };
+		04B0E4B01965601F00ACE20F /* libluajit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libluajit.a; path = ../../../lib/libluajit.a; sourceTree = "<group>"; };
+		04CD935719E69A7D003E708F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		04D2EF2B19888ECF00064274 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		04D548471A8DD526003395E3 /* MOAIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAIAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		04D548481A8DD526003395E3 /* MOAIAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MOAIAppDelegate.mm; sourceTree = SOURCE_ROOT; };
+		04D548491A8DD526003395E3 /* MOAIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAIView.h; sourceTree = SOURCE_ROOT; };
+		04D5484A1A8DD526003395E3 /* MOAIView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MOAIView.mm; sourceTree = SOURCE_ROOT; };
+		04D5484B1A8DD526003395E3 /* MOAIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAIViewController.h; sourceTree = SOURCE_ROOT; };
+		04D5484C1A8DD526003395E3 /* MOAIViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MOAIViewController.mm; sourceTree = SOURCE_ROOT; };
+		0711070413C637F000EE7C53 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		074C469F14240A250066B1EB /* moai-target */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "moai-target"; sourceTree = "<group>"; };
+		079530CD1447A0FF00143A72 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		07EF3E43147BAAA5006CFDCE /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Gii Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gii Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		665383F4160A7B65003D5529 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfacebook_ios_sdk.a; path = ../../../lib/libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		665383F6160A8466003D5529 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CD935819E69A7D003E708F /* CoreMotion.framework in Frameworks */,
+				040FDAE51822BE910051A2D9 /* AdSupport.framework in Frameworks */,
+				040FDAB91822B2B60051A2D9 /* AVFoundation.framework in Frameworks */,
+				040FDAB71822B2A20051A2D9 /* CoreMedia.framework in Frameworks */,
+				03CC910C13B3C48400B2724C /* AudioToolbox.framework in Frameworks */,
+				03CC910413B3C47600B2724C /* CoreAudio.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				0443E52C1A8DE2250090F317 /* libCrittercism_v4_3_3.a in Frameworks */,
+				03CC90FE13B3C46A00B2724C /* CoreLocation.framework in Frameworks */,
+				0711070513C637F000EE7C53 /* CoreTelephony.framework in Frameworks */,
+				04D2EF2C19888ECF00064274 /* GameKit.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				079530CE1447A0FF00143A72 /* MediaPlayer.framework in Frameworks */,
+				665383F7160A8466003D5529 /* MessageUI.framework in Frameworks */,
+				03CC90F813B3C45A00B2724C /* OpenGLES.framework in Frameworks */,
+				03CC912213B3C4A400B2724C /* QuartzCore.framework in Frameworks */,
+				03CC912C13B3C4C000B2724C /* StoreKit.framework in Frameworks */,
+				03CC911C13B3C49400B2724C /* SystemConfiguration.framework in Frameworks */,
+				07EF3E44147BAAA5006CFDCE /* Twitter.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E2806113C7CC4800EE3B0D /* build */ = {
+			isa = PBXGroup;
+			children = (
+				074C469F14240A250066B1EB /* moai-target */,
+				037ED45813CD1FD2009CBA72 /* package.sh */,
+			);
+			name = build;
+			sourceTree = "<group>";
+		};
+		040FDAD31822BC7F0051A2D9 /* host-modules */ = {
+			isa = PBXGroup;
+			children = (
+				040FDAD41822BC7F0051A2D9 /* aku_modules.cpp */,
+				040FDAD51822BC7F0051A2D9 /* aku_modules.h */,
+				040FDAD61822BC7F0051A2D9 /* aku_modules_config.h */,
+				040FDAD71822BC7F0051A2D9 /* aku_modules_custom.cpp */,
+				040FDAD81822BC7F0051A2D9 /* aku_modules_custom.h */,
+				040FDAD91822BC7F0051A2D9 /* aku_modules_ios.h */,
+				040FDADA1822BC7F0051A2D9 /* aku_modules_ios.mm */,
+				040FDADB1822BC7F0051A2D9 /* aku_modules_ios_config.h */,
+			);
+			name = "host-modules";
+			path = "../../host-modules";
+			sourceTree = "<group>";
+		};
+		0417DD8C17F0227900733CC3 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				0417DD8D17F0227900733CC3 /* Default-568h@2x.png */,
+				0417DD8E17F0227900733CC3 /* Default-Portrait@2x~ipad.png */,
+				0417DD8F17F0227900733CC3 /* Default-Portrait~ipad.png */,
+				0417DD9017F0227900733CC3 /* Default.png */,
+				0417DD9117F0227900733CC3 /* Default@2x.png */,
+				0417DD9217F0227900733CC3 /* Icon-144.png */,
+				0417DD9317F0227900733CC3 /* Icon-72.png */,
+				0417DD9417F0227900733CC3 /* Icon-Small-50.png */,
+				0417DD9517F0227900733CC3 /* Icon-Small.png */,
+				0417DD9617F0227900733CC3 /* Icon-Small@2x.png */,
+				0417DD9717F0227900733CC3 /* Icon.png */,
+				0417DD9817F0227900733CC3 /* Icon@2x.png */,
+				0417DD9917F0227900733CC3 /* launch320x480.png */,
+				0417DD9A17F0227900733CC3 /* launch640x1136.png */,
+				0417DD9B17F0227900733CC3 /* launch640x960.png */,
+				0417DD9C17F0227900733CC3 /* launch768x1024.png */,
+				0417DD9D17F0227900733CC3 /* launch768x1024@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		0443E52D1A8DE2610090F317 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				0443E57E1A8DE2850090F317 /* spine */,
+				0443E53C1A8DE2850090F317 /* enet */,
+				0443E52E1A8DE2850090F317 /* MOAIManualTimer.h */,
+				0443E6101A8DEB750090F317 /* lpeg.c */,
+				0443E52F1A8DE2850090F317 /* extensionClasses.cpp */,
+				0443E5301A8DE2850090F317 /* TMInfluenceMap.h */,
+				0443E5311A8DE2850090F317 /* TMInfluenceMap.cpp */,
+				0443E5321A8DE2850090F317 /* TMPathGrid.h */,
+				0443E5331A8DE2850090F317 /* TMPathGrid.cpp */,
+				0443E5341A8DE2850090F317 /* extensionClasses.h */,
+				0443E5351A8DE2850090F317 /* MOAISceneContext.cpp */,
+				0443E5361A8DE2850090F317 /* MOAISceneContext.h */,
+				0443E5371A8DE2850090F317 /* MOCKNetworkHost.cpp */,
+				0443E5381A8DE2850090F317 /* MOAISpineSkeleton.cpp */,
+				0443E5391A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.cpp */,
+				0443E53A1A8DE2850090F317 /* MOAISectionDeck.cpp */,
+				0443E5641A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.h */,
+				0443E5661A8DE2850090F317 /* MOCKNetworkRPC.cpp */,
+				0443E5671A8DE2850090F317 /* MOAISpineAnimation.cpp */,
+				0443E5681A8DE2850090F317 /* MOAIViewPinTransform.cpp */,
+				0443E5691A8DE2850090F317 /* MOAIViewPinTransform.h */,
+				0443E56A1A8DE2850090F317 /* MOAISpineSkeletonData.cpp */,
+				0443E56B1A8DE2850090F317 /* MOAISpineSkeleton.h */,
+				0443E56C1A8DE2850090F317 /* MOAIGradientDeck.cpp */,
+				0443E56D1A8DE2850090F317 /* MOAISpineAnimation.h */,
+				0443E56E1A8DE2850090F317 /* MOAISpineSkeletonData.h */,
+				0443E56F1A8DE2850090F317 /* MOAIImageLoadTask.cpp */,
+				0443E5701A8DE2850090F317 /* MOCKNetworkBroadcast.h */,
+				0443E5711A8DE2850090F317 /* MOAISpineAtlas.cpp */,
+				0443E5721A8DE2850090F317 /* MOAISpineAtlas.h */,
+				0443E5731A8DE2850090F317 /* MOAISectionDeck.h */,
+				0443E5741A8DE2850090F317 /* MOCKProp.cpp */,
+				0443E5751A8DE2850090F317 /* MOAIManualTimer.cpp */,
+				0443E5761A8DE2850090F317 /* YAKAHelper.h */,
+				0443E5771A8DE2850090F317 /* YAKAHelper.cpp */,
+				0443E5781A8DE2850090F317 /* MOAITrailProp.cpp */,
+				0443E5791A8DE2850090F317 /* MOAITrailProp.h */,
+				0443E57A1A8DE2850090F317 /* MOAIImageLoadTask.h */,
+				0443E57B1A8DE2850090F317 /* MOAIGradientDeck.h */,
+				0443E57C1A8DE2850090F317 /* MOAISpineAnimationMixTable.cpp */,
+				0443E57D1A8DE2850090F317 /* MOAISpineAnimationMixTable.h */,
+				0443E5B51A8DE2850090F317 /* MOCKNetworkHost.h */,
+				0443E5B61A8DE2850090F317 /* MOCKNetworkRPC.h */,
+				0443E5B71A8DE2850090F317 /* MOCKNetworkMessage.h */,
+				0443E5B81A8DE2850090F317 /* MOCKNetworkMessage.cpp */,
+				0443E5B91A8DE2850090F317 /* MOCKNetworkStream.cpp */,
+				0443E5BA1A8DE2850090F317 /* MOCKNetworkStream.h */,
+				0443E5BB1A8DE2850090F317 /* MOCKNetworkPeer.cpp */,
+				0443E5BC1A8DE2850090F317 /* MOCKNetworkBroadcast.cpp */,
+				0443E5BD1A8DE2850090F317 /* MOCKNetworkView.h */,
+				0443E5BE1A8DE2850090F317 /* MOCKNetworkView.cpp */,
+				0443E5BF1A8DE2850090F317 /* MOCKNetworkPeer.h */,
+				0443E5C01A8DE2850090F317 /* MOAIRandom.cpp */,
+				0443E5C11A8DE2850090F317 /* MOAIRandom.h */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		0443E53C1A8DE2850090F317 /* enet */ = {
+			isa = PBXGroup;
+			children = (
+				0443E5421A8DE2850090F317 /* callbacks.c */,
+				0443E5431A8DE2850090F317 /* compress.c */,
+				0443E54E1A8DE2850090F317 /* host.c */,
+				0443E55B1A8DE2850090F317 /* list.c */,
+				0443E55E1A8DE2850090F317 /* packet.c */,
+				0443E55F1A8DE2850090F317 /* peer.c */,
+				0443E5601A8DE2850090F317 /* protocol.c */,
+				0443E5611A8DE2850090F317 /* unix.c */,
+			);
+			name = enet;
+			path = ../extension/enet;
+			sourceTree = "<group>";
+		};
+		0443E57E1A8DE2850090F317 /* spine */ = {
+			isa = PBXGroup;
+			children = (
+				0443E57F1A8DE2850090F317 /* include */,
+				0443E5991A8DE2850090F317 /* src */,
+			);
+			name = spine;
+			path = ../extension/spine;
+			sourceTree = "<group>";
+		};
+		0443E57F1A8DE2850090F317 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0443E5801A8DE2850090F317 /* spine */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0443E5801A8DE2850090F317 /* spine */ = {
+			isa = PBXGroup;
+			children = (
+				0443E5811A8DE2850090F317 /* Animation.h */,
+				0443E5821A8DE2850090F317 /* AnimationState.h */,
+				0443E5831A8DE2850090F317 /* AnimationStateData.h */,
+				0443E5841A8DE2850090F317 /* Atlas.h */,
+				0443E5851A8DE2850090F317 /* AtlasAttachmentLoader.h */,
+				0443E5861A8DE2850090F317 /* Attachment.h */,
+				0443E5871A8DE2850090F317 /* AttachmentLoader.h */,
+				0443E5881A8DE2850090F317 /* Bone.h */,
+				0443E5891A8DE2850090F317 /* BoneData.h */,
+				0443E58A1A8DE2850090F317 /* BoundingBoxAttachment.h */,
+				0443E58B1A8DE2850090F317 /* Event.h */,
+				0443E58C1A8DE2850090F317 /* EventData.h */,
+				0443E58D1A8DE2850090F317 /* MeshAttachment.h */,
+				0443E58E1A8DE2850090F317 /* RegionAttachment.h */,
+				0443E58F1A8DE2850090F317 /* Skeleton.h */,
+				0443E5901A8DE2850090F317 /* SkeletonBounds.h */,
+				0443E5911A8DE2850090F317 /* SkeletonData.h */,
+				0443E5921A8DE2850090F317 /* SkeletonJson.h */,
+				0443E5931A8DE2850090F317 /* Skin.h */,
+				0443E5941A8DE2850090F317 /* SkinnedMeshAttachment.h */,
+				0443E5951A8DE2850090F317 /* Slot.h */,
+				0443E5961A8DE2850090F317 /* SlotData.h */,
+				0443E5971A8DE2850090F317 /* extension.h */,
+				0443E5981A8DE2850090F317 /* spine.h */,
+			);
+			path = spine;
+			sourceTree = "<group>";
+		};
+		0443E5991A8DE2850090F317 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0443E59A1A8DE2850090F317 /* spine */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0443E59A1A8DE2850090F317 /* spine */ = {
+			isa = PBXGroup;
+			children = (
+				0443E59B1A8DE2850090F317 /* Animation.c */,
+				0443E59C1A8DE2850090F317 /* AnimationState.c */,
+				0443E59D1A8DE2850090F317 /* AnimationStateData.c */,
+				0443E59E1A8DE2850090F317 /* Atlas.c */,
+				0443E59F1A8DE2850090F317 /* AtlasAttachmentLoader.c */,
+				0443E5A01A8DE2850090F317 /* Attachment.c */,
+				0443E5A11A8DE2850090F317 /* AttachmentLoader.c */,
+				0443E5A21A8DE2850090F317 /* Bone.c */,
+				0443E5A31A8DE2850090F317 /* BoneData.c */,
+				0443E5A41A8DE2850090F317 /* BoundingBoxAttachment.c */,
+				0443E5A51A8DE2850090F317 /* Event.c */,
+				0443E5A61A8DE2850090F317 /* EventData.c */,
+				0443E5A71A8DE2850090F317 /* Json.c */,
+				0443E5A81A8DE2850090F317 /* Json.h */,
+				0443E5A91A8DE2850090F317 /* MeshAttachment.c */,
+				0443E5AA1A8DE2850090F317 /* RegionAttachment.c */,
+				0443E5AB1A8DE2850090F317 /* Skeleton.c */,
+				0443E5AC1A8DE2850090F317 /* SkeletonBounds.c */,
+				0443E5AD1A8DE2850090F317 /* SkeletonData.c */,
+				0443E5AE1A8DE2850090F317 /* SkeletonJson.c */,
+				0443E5AF1A8DE2850090F317 /* Skin.c */,
+				0443E5B01A8DE2850090F317 /* SkinnedMeshAttachment.c */,
+				0443E5B11A8DE2850090F317 /* Slot.c */,
+				0443E5B21A8DE2850090F317 /* SlotData.c */,
+				0443E5B31A8DE2850090F317 /* extension.c */,
+			);
+			path = spine;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04D548471A8DD526003395E3 /* MOAIAppDelegate.h */,
+				04D548481A8DD526003395E3 /* MOAIAppDelegate.mm */,
+				04D548491A8DD526003395E3 /* MOAIView.h */,
+				04D5484A1A8DD526003395E3 /* MOAIView.mm */,
+				04D5484B1A8DD526003395E3 /* MOAIViewController.h */,
+				04D5484C1A8DD526003395E3 /* MOAIViewController.mm */,
+				040FDAD31822BC7F0051A2D9 /* host-modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Gii Preview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				0443E52D1A8DE2610090F317 /* extension */,
+				0417DD8C17F0227900733CC3 /* resource */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				03CC90A813B3C37C00B2724C /* main.mm */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04A7ABEB18A5FB150086067C /* Images.xcassets */,
+				03E2806113C7CC4800EE3B0D /* build */,
+				E9AA1CD514D8C6860086E9DE /* Crittercism */,
+				03CC90AA13B3C38800B2724C /* Entitlements.plist */,
+				049670F115F397C5008BA8D4 /* content */,
+				03CC905513B3C1B700B2724C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04CD935719E69A7D003E708F /* CoreMotion.framework */,
+				04D2EF2B19888ECF00064274 /* GameKit.framework */,
+				04B0E4B01965601F00ACE20F /* libluajit.a */,
+				040FDAE41822BE910051A2D9 /* AdSupport.framework */,
+				0443E52B1A8DE2250090F317 /* libCrittercism_v4_3_3.a */,
+				665383F4160A7B65003D5529 /* libfacebook_ios_sdk.a */,
+				04398FD315E9F591004CF6EF /* libFlurry.a */,
+				040FDAB81822B2B60051A2D9 /* AVFoundation.framework */,
+				040FDAB61822B2A20051A2D9 /* CoreMedia.framework */,
+				665383F6160A8466003D5529 /* MessageUI.framework */,
+				03CC910B13B3C48400B2724C /* AudioToolbox.framework */,
+				03CC910313B3C47600B2724C /* CoreAudio.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				03CC90FD13B3C46A00B2724C /* CoreLocation.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				03CC90F713B3C45A00B2724C /* OpenGLES.framework */,
+				03CC912113B3C4A400B2724C /* QuartzCore.framework */,
+				03CC912B13B3C4C000B2724C /* StoreKit.framework */,
+				03CC911B13B3C49400B2724C /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				07EF3E43147BAAA5006CFDCE /* Twitter.framework */,
+				0711070413C637F000EE7C53 /* CoreTelephony.framework */,
+				079530CD1447A0FF00143A72 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9AA1CD514D8C6860086E9DE /* Crittercism */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Crittercism;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "app" */;
+			buildPhases = (
+				03E27D9413C7C05B00EE3B0D /* ShellScript */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = app;
+			productName = MoaiSample;
+			productReference = 1D6058910D05DD3D006BFB54 /* Gii Preview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = S58DUR2366;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "gii" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A7ABEC18A5FB150086067C /* Images.xcassets in Resources */,
+				04CD811B17F02CC200DBD3AA /* content in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E27D9413C7C05B00EE3B0D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "/bin/bash ./package.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0443E5F31A8DE2850090F317 /* AnimationStateData.c in Sources */,
+				0443E5C41A8DE2850090F317 /* TMPathGrid.cpp in Sources */,
+				0443E5D01A8DE2850090F317 /* compress.c in Sources */,
+				0443E5DE1A8DE2850090F317 /* packet.c in Sources */,
+				0443E5FF1A8DE2850090F317 /* RegionAttachment.c in Sources */,
+				0443E5FA1A8DE2850090F317 /* BoundingBoxAttachment.c in Sources */,
+				0443E5FD1A8DE2850090F317 /* Json.c in Sources */,
+				04D5484F1A8DD526003395E3 /* MOAIViewController.mm in Sources */,
+				0443E5C51A8DE2850090F317 /* MOAISceneContext.cpp in Sources */,
+				0443E5F71A8DE2850090F317 /* AttachmentLoader.c in Sources */,
+				0443E6061A8DE2850090F317 /* Slot.c in Sources */,
+				0443E5F21A8DE2850090F317 /* AnimationState.c in Sources */,
+				0443E5C81A8DE2850090F317 /* MOAIGfxMaskedQuadListDeck2D.cpp in Sources */,
+				0443E6111A8DEB750090F317 /* lpeg.c in Sources */,
+				0443E6011A8DE2850090F317 /* SkeletonBounds.c in Sources */,
+				0443E6031A8DE2850090F317 /* SkeletonJson.c in Sources */,
+				0443E5F51A8DE2850090F317 /* AtlasAttachmentLoader.c in Sources */,
+				0443E60A1A8DE2850090F317 /* MOCKNetworkMessage.cpp in Sources */,
+				0443E5E51A8DE2850090F317 /* MOCKNetworkRPC.cpp in Sources */,
+				03CC90A913B3C37C00B2724C /* main.mm in Sources */,
+				0443E5C91A8DE2850090F317 /* MOAISectionDeck.cpp in Sources */,
+				0443E5E01A8DE2850090F317 /* protocol.c in Sources */,
+				0443E5F41A8DE2850090F317 /* Atlas.c in Sources */,
+				0443E5E91A8DE2850090F317 /* MOAIGradientDeck.cpp in Sources */,
+				0443E5EF1A8DE2850090F317 /* MOAITrailProp.cpp in Sources */,
+				0443E6051A8DE2850090F317 /* SkinnedMeshAttachment.c in Sources */,
+				0443E5DF1A8DE2850090F317 /* peer.c in Sources */,
+				0443E5E11A8DE2850090F317 /* unix.c in Sources */,
+				0443E5ED1A8DE2850090F317 /* MOAIManualTimer.cpp in Sources */,
+				0443E5FC1A8DE2850090F317 /* EventData.c in Sources */,
+				0443E5DA1A8DE2850090F317 /* host.c in Sources */,
+				040FDAE11822BC7F0051A2D9 /* aku_modules_ios.mm in Sources */,
+				0443E5C71A8DE2850090F317 /* MOAISpineSkeleton.cpp in Sources */,
+				0443E5F81A8DE2850090F317 /* Bone.c in Sources */,
+				0443E60D1A8DE2850090F317 /* MOCKNetworkBroadcast.cpp in Sources */,
+				040FDADF1822BC7F0051A2D9 /* aku_modules.cpp in Sources */,
+				0443E60C1A8DE2850090F317 /* MOCKNetworkPeer.cpp in Sources */,
+				0443E5C61A8DE2850090F317 /* MOCKNetworkHost.cpp in Sources */,
+				0443E5E81A8DE2850090F317 /* MOAISpineSkeletonData.cpp in Sources */,
+				04D5484E1A8DD526003395E3 /* MOAIView.mm in Sources */,
+				0443E5F11A8DE2850090F317 /* Animation.c in Sources */,
+				0443E5C21A8DE2850090F317 /* extensionClasses.cpp in Sources */,
+				0443E6001A8DE2850090F317 /* Skeleton.c in Sources */,
+				0443E5E71A8DE2850090F317 /* MOAIViewPinTransform.cpp in Sources */,
+				0443E6081A8DE2850090F317 /* extension.c in Sources */,
+				0443E5E61A8DE2850090F317 /* MOAISpineAnimation.cpp in Sources */,
+				0443E60E1A8DE2850090F317 /* MOCKNetworkView.cpp in Sources */,
+				0443E6071A8DE2850090F317 /* SlotData.c in Sources */,
+				0443E5EC1A8DE2850090F317 /* MOCKProp.cpp in Sources */,
+				0443E5DC1A8DE2850090F317 /* list.c in Sources */,
+				040FDAE01822BC7F0051A2D9 /* aku_modules_custom.cpp in Sources */,
+				0443E5F01A8DE2850090F317 /* MOAISpineAnimationMixTable.cpp in Sources */,
+				0443E5EA1A8DE2850090F317 /* MOAIImageLoadTask.cpp in Sources */,
+				0443E60F1A8DE2850090F317 /* MOAIRandom.cpp in Sources */,
+				0443E5CF1A8DE2850090F317 /* callbacks.c in Sources */,
+				0443E5EB1A8DE2850090F317 /* MOAISpineAtlas.cpp in Sources */,
+				0443E5FB1A8DE2850090F317 /* Event.c in Sources */,
+				0443E5F61A8DE2850090F317 /* Attachment.c in Sources */,
+				0443E6041A8DE2850090F317 /* Skin.c in Sources */,
+				0443E60B1A8DE2850090F317 /* MOCKNetworkStream.cpp in Sources */,
+				04D5484D1A8DD526003395E3 /* MOAIAppDelegate.mm in Sources */,
+				0443E5F91A8DE2850090F317 /* BoneData.c in Sources */,
+				0443E6021A8DE2850090F317 /* SkeletonData.c in Sources */,
+				0443E5C31A8DE2850090F317 /* TMInfluenceMap.cpp in Sources */,
+				0443E5EE1A8DE2850090F317 /* YAKAHelper.cpp in Sources */,
+				0443E5FE1A8DE2850090F317 /* MeshAttachment.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=*]" = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-frame";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/prj/moai/lib,
+					"/Users/tommo/dev/moai-dev/3rdparty/crittercism-4.3.3/CrittercismSDK",
+				);
+				OTHER_LDFLAGS = (
+					"-lmoai-ios",
+					"-lmoai-ios-crypto",
+					"-lmoai-ios-apple",
+					"-lmoai-ios-sim",
+					"-lmoai-ios-3rdparty-crypto",
+					"-lmoai-ios-3rdparty-core",
+					"-lmoai-ios-zl-core",
+					"-lmoai-ios-zl-crypto",
+					"-lmoai-ios-zl-vfs",
+					"-lmoai-ios-http-client",
+					"-lmoai-ios-luaext",
+					"-lmoai-ios-box2d",
+					"-lmoai-ios-fmod-designer",
+					"-lmoai-ios-crittercism",
+					"-lmoai-ios-http-client",
+					"-lmoai-ios-billing",
+					"-lmoai-ios-gamecenter",
+					"-lmoai-ios-fmod-ex",
+					"-lmoai-ios-untz",
+					"-lfmodex_$PLATFORM_NAME",
+					"-lfmodevent_$PLATFORM_NAME",
+					"-lfmodeventnet_$PLATFORM_NAME",
+					"-lc++",
+				);
+				PRODUCT_NAME = "Gii Preview";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=*]" = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-frame";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/prj/moai/lib,
+					"/Users/tommo/dev/moai-dev/3rdparty/crittercism-4.3.3/CrittercismSDK",
+				);
+				LLVM_LTO = YES;
+				OTHER_LDFLAGS = (
+					"-lmoai-ios",
+					"-lmoai-ios-crypto",
+					"-lmoai-ios-apple",
+					"-lmoai-ios-sim",
+					"-lmoai-ios-3rdparty-crypto",
+					"-lmoai-ios-3rdparty-core",
+					"-lmoai-ios-zl-core",
+					"-lmoai-ios-zl-crypto",
+					"-lmoai-ios-zl-vfs",
+					"-lmoai-ios-http-client",
+					"-lmoai-ios-luaext",
+					"-lmoai-ios-box2d",
+					"-lmoai-ios-fmod-designer",
+					"-lmoai-ios-crittercism",
+					"-lmoai-ios-http-client",
+					"-lmoai-ios-billing",
+					"-lmoai-ios-gamecenter",
+					"-lmoai-ios-fmod-ex",
+					"-lmoai-ios-untz",
+					"-lfmodex_$PLATFORM_NAME",
+					"-lfmodevent_$PLATFORM_NAME",
+					"-lfmodeventnet_$PLATFORM_NAME",
+					"-lc++",
+				);
+				PRODUCT_NAME = "Gii Preview";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mingwei Zhou (ZT4A3R95FQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				EXTRA_LIB_PATH = /Users/tommo/prj/moai/lib;
+				FMODDESIGNER_LIB_PATH = /Users/tommo/prj/moai/lib/fmoddesigner;
+				FMOD_LIB_PATH = /Users/tommo/prj/moai/lib/fmod;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AKU_WITH_IOS,
+					SPINE_SHORT_NAMES,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/..",
+					"\"$(MOAI_PATH)/src\"",
+					"\"$(MOAI_3RDPARTY)\"",
+					"\"$(MOAI_PATH)/src/config-default\"",
+					"\"$(MOAI_PATH)/src/config-default\"",
+					"\"$(MOAI_PATH)/3rdparty/lua-5.1.3/src\"",
+					"\"$(MOAI_PATH)/3rdparty\"",
+					"\"$(MOAI_PATH)/3rdparty/contrib\"",
+					"\"$(MOAI_PATH)/3rdparty/tinyxml\"",
+					"\"$(MOAI_PATH)/3rdparty/lpng140\"",
+					"\"$(MOAI_PATH)/3rdparty/c-ares-1.7.5\"",
+					"\"$(MOAI_PATH)/3rdparty/openssl-1.0.0d/include-iphone\"",
+					"\"$(MOAI_PATH)/3rdparty/expat-2.1.0/lib\"",
+					"\"$(MOAI_PATH)/3rdparty/freetype-2.4.4/include\"",
+					"\"$(MOAI_PATH)/3rdparty/box2d-2.2.1\"",
+					"\"$(MOAI_PATH)/3rdparty/luacrypto-0.2.0/src\"",
+					"\"$(MOAI_PATH)/3rdparty/luacurl-1.2.1/src\"",
+					"\"$(MOAI_PATH)/3rdparty/luasocket-2.0.2/src\"",
+					"\"$(MOAI_PATH)/3rdparty/luasql-2.2.0/src\"",
+					"\"$(MOAI_PATH)/3rdparty/libogg-1.2.2/include\"",
+					"\"$(MOAI_PATH)/3rdparty/jansson-2.1/src\"",
+					"\"$(MOAI_PATH)/3rdparty/jpeg-8c\"",
+					"\"$(MOAI_PATH)/3rdparty/untz/include\"",
+					"\"$(MOAI_PATH)/3rdparty/untz/src\"",
+					"\"$(MOAI_PATH)/3rdparty/libvorbis-1.3.2/lib\"",
+					"\"$(MOAI_PATH)/3rdparty/libvorbis-1.3.2/include\"",
+					"\"$(MOAI_PATH)/3rdparty/tlsf-2.0\"",
+					"\"$(MOAI_PATH)/3rdparty/zlib-1.2.3\"",
+					"\"$(MOAI_PATH)/3rdparty/ooid-0.99\"",
+					"\"$(MOAI_PATH)/3rdparty/tapjoyiOS-8.1.9/TapjoyConnect\"",
+					"\"$(MOAI_PATH)/3rdparty/crittercismiOS-3.1.5/CrittercismSDK\"",
+					"\"$(MOAI_PATH)/3rdparty/adcolonyiOS-197/Library\"",
+					"\"$(MOAI_PATH)/3rdparty/chartboostiOS-2.9.1\"",
+					"\"$(MOAI_PATH)/3rdparty/facebookiOS-3.0.6.b/src\"",
+					"\"$(MOAI_PATH)/3rdparty/sfmt-1.4\"",
+					"$(SRCROOT)/../extension/spine/include",
+					"$(SRCROOT)/../extension/enet/include",
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(MOAI_LIB_PATH)\"",
+					"\"$(EXTRA_LIB_PATH)\"",
+					"\"$(FMODDESIGNER_LIB_PATH)\"",
+					"\"$(FMOD_LIB_PATH)\"",
+				);
+				LLVM_LTO = YES;
+				MOAI_3RD_PATH = "/Users/tommo/dev/moai-dev/3rdparty";
+				MOAI_LIB_PATH = "/Users/tommo/prj/moai/lib/debug-ios";
+				"MOAI_LIB_PATH[arch=*]" = "/Users/tommo/prj/moai/lib/debug-ios";
+				MOAI_PATH = "/Users/tommo/dev/moai-dev";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "7299653F-0617-4509-8495-E0A41F440E1A";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				EXTRA_LIB_PATH = /Users/tommo/prj/moai/lib;
+				FMODDESIGNER_LIB_PATH = /Users/tommo/prj/moai/lib/fmoddesigner;
+				FMOD_LIB_PATH = /Users/tommo/prj/moai/lib/fmod;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AKU_WITH_IOS,
+					SPINE_SHORT_NAMES,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/..",
+					"\"$(MOAI_PATH)/src\"",
+					"\"$(MOAI_3RDPARTY)\"",
+					"\"$(MOAI_PATH)/src/config-default\"",
+					"\"$(MOAI_PATH)/src/config-default\"",
+					"\"$(MOAI_PATH)/3rdparty/lua-5.1.3/src\"",
+					"\"$(MOAI_PATH)/3rdparty\"",
+					"\"$(MOAI_PATH)/3rdparty/contrib\"",
+					"\"$(MOAI_PATH)/3rdparty/tinyxml\"",
+					"\"$(MOAI_PATH)/3rdparty/lpng140\"",
+					"\"$(MOAI_PATH)/3rdparty/c-ares-1.7.5\"",
+					"\"$(MOAI_PATH)/3rdparty/openssl-1.0.0d/include-iphone\"",
+					"\"$(MOAI_PATH)/3rdparty/expat-2.1.0/lib\"",
+					"\"$(MOAI_PATH)/3rdparty/freetype-2.4.4/include\"",
+					"\"$(MOAI_PATH)/3rdparty/box2d-2.2.1\"",
+					"\"$(MOAI_PATH)/3rdparty/luacrypto-0.2.0/src\"",
+					"\"$(MOAI_PATH)/3rdparty/luacurl-1.2.1/src\"",
+					"\"$(MOAI_PATH)/3rdparty/luasocket-2.0.2/src\"",
+					"\"$(MOAI_PATH)/3rdparty/luasql-2.2.0/src\"",
+					"\"$(MOAI_PATH)/3rdparty/libogg-1.2.2/include\"",
+					"\"$(MOAI_PATH)/3rdparty/jansson-2.1/src\"",
+					"\"$(MOAI_PATH)/3rdparty/jpeg-8c\"",
+					"\"$(MOAI_PATH)/3rdparty/untz/include\"",
+					"\"$(MOAI_PATH)/3rdparty/untz/src\"",
+					"\"$(MOAI_PATH)/3rdparty/libvorbis-1.3.2/lib\"",
+					"\"$(MOAI_PATH)/3rdparty/libvorbis-1.3.2/include\"",
+					"\"$(MOAI_PATH)/3rdparty/tlsf-2.0\"",
+					"\"$(MOAI_PATH)/3rdparty/zlib-1.2.3\"",
+					"\"$(MOAI_PATH)/3rdparty/ooid-0.99\"",
+					"\"$(MOAI_PATH)/3rdparty/tapjoyiOS-8.1.9/TapjoyConnect\"",
+					"\"$(MOAI_PATH)/3rdparty/crittercismiOS-3.1.5/CrittercismSDK\"",
+					"\"$(MOAI_PATH)/3rdparty/adcolonyiOS-197/Library\"",
+					"\"$(MOAI_PATH)/3rdparty/chartboostiOS-2.9.1\"",
+					"\"$(MOAI_PATH)/3rdparty/facebookiOS-3.0.6.b/src\"",
+					"\"$(MOAI_PATH)/3rdparty/sfmt-1.4\"",
+					"$(SRCROOT)/../extension/spine/include",
+					"$(SRCROOT)/../extension/enet/include",
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(MOAI_LIB_PATH)\"",
+					"\"$(EXTRA_LIB_PATH)\"",
+					"\"$(FMODDESIGNER_LIB_PATH)\"",
+					"\"$(FMOD_LIB_PATH)\"",
+				);
+				LLVM_LTO = YES;
+				MOAI_3RD_PATH = "/Users/tommo/dev/moai-dev/3rdparty";
+				MOAI_LIB_PATH = "/Users/tommo/prj/moai/lib/release-ios";
+				MOAI_PATH = "/Users/tommo/dev/moai-dev";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "gii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

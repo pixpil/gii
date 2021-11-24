@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[CLASS: ${1:Foo} (${2:mock.Component})
+	:MODEL{${3:}}
+
+mock.registerComponent( '$1', $1 )
+--mock.registerEntityWithComponent( '$1', $1 )
+
+]]></content>
+    <tabTrigger>classc</tabTrigger>
+    <scope>source.lua</scope>
+    <description>class</description>
+</snippet>

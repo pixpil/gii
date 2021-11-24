@@ -1,0 +1,6 @@
+{
+	"name"     : "remote",
+	"priority" : 1,
+	"help"     : "run remote gii command",
+	"autoload" : false
+}

@@ -1,0 +1,6 @@
+{
+	"name"     : "openurl",
+	"priority" : 1,
+	"help"     : "send remote command to running gii ide",
+	"autoload" : false
+}

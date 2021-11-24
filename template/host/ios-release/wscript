@@ -1,0 +1,67 @@
+import sys
+import waf_utils
+import moai_env
+
+TARGET_NAME  = 'ios'
+INSTALL_NAME = 'gii'
+
+def options( opt ):
+	pass
+
+def configure( conf ):
+	if sys.platform != 'darwin':
+		print(' iOS build needs OSX... ' )
+		return
+	for config in [ 'release', 'debug' ]:
+		name = '%s-%s' % ( TARGET_NAME, config )
+		conf.setenv( name )
+		waf_utils.prepareEnvIOS( conf )		
+	
+def build( bld ):	
+	if bld.cmd.startswith( 'install' ):
+		pass
+	else:
+		frameworks = [ 
+			'AudioToolbox',
+			'CoreAudio',
+			'CoreGraphics',
+			'CoreLocation',
+			'Foundation',
+			'QuartzCore',
+			'OpenGLES',
+			'StoreKit',
+			'UIKit',
+			'SystemConfiguration',
+			'CoreTelephony',
+			'GameKit',
+			'MediaPlayer',
+			'Twitter',
+			'MessageUI'
+		]
+
+		source = [
+			'main.mm',
+			'Classes/LocationObserver.mm',
+			'Classes/MoaiAppDelegate.mm',
+			'Classes/MoaiVC.mm',
+			'Classes/MoaiView.mm',
+			'Classes/OpenGLView.mm',
+			'Classes/ParticlePresets.cpp'
+		]
+
+		bld.program(
+			name          = 'gii-ios',
+			target        = 'gii',
+			feature       = 'xcode',
+			use           = 'MOAI FMOD extension',
+			source        = source,
+			mac_app       = True,
+			mac_plist     = 'Info.plist',
+			# mac_resources = 'resources/MainMenu.nib resources/MacApp.icns',
+			framework     = frameworks,
+			includes      = 'Classes',
+
+			linkflags       = '-lCrittercismCrashOnly_v3_3_3'
+			# install_path  = '${PREFIX}',
+		)
+

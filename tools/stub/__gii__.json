@@ -1,0 +1,6 @@
+{
+	"name"     : "stub",
+	"priority" : 1,
+	"help"     : "start the GUI stub",
+	"autoload" : false
+}

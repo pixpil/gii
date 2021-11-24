@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List SQ</string>
+	<key>scope</key>
+	<string>entity.label.sq_script, entity.checkpoint.sq_script</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<string>1</string>
+	</dict>
+	<key>uuid</key>
+	<string>3a62449f-2f0d-4568-8d51-05432e6d1756</string>
+</dict>
+</plist>

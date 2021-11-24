@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Comments</string>
+	<key>scope</key>
+	<string>source.sq_script</string>
+	<key>settings</key>
+	<dict>
+		<key>increaseIndentPattern</key>
+		<string>\s*((on|if|else|elseif|switch|case|default)\s*.*|\w+\s*:)$</string>
+		<key>decreaseIndentPattern</key>
+		<string>\s*((on|if|else|elseif)\s*.*)$</string>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_COMMENT_START</string>
+				<key>value</key>
+				<string>// </string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>953cfc13-9d86-45ce-b68b-9e747bf26f9c</string>
+</dict>
+</plist>

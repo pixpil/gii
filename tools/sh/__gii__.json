@@ -1,0 +1,6 @@
+{
+	"name"     : "sh",
+	"priority" : 1,
+	"help"     : "run shell script from project's env/shell path ",
+	"autoload" : false
+}

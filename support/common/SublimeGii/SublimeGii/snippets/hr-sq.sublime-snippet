@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[//--------------------------------------------------------------------]]></content>
+    <tabTrigger>----</tabTrigger>
+    <scope>source.sq_script</scope>
+    <description>horizontal line</description>
+</snippet>

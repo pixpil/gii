@@ -1,0 +1,36 @@
+{
+  "map": {
+    "!10001": {
+      "body": {
+        "scenes": [
+          "!10002"
+        ],
+        "targets": [
+          "!10003"
+        ]
+      },
+      "model": "mock_edit.DeployManagerConfig"
+    },
+    "!10002": {
+      "body": {
+        "alias": "entry",
+        "entry": true,
+        "id": 1,
+        "path": "TestUILight.scene"
+      },
+      "model": "mock_edit.DeploySceneEntry"
+    },
+    "!10003": {
+      "body": {
+        "appName": "GII Game",
+        "bundleId": "com.hatrix.gii_game",
+        "device": "universal",
+        "name": "IOS_TARGET",
+        "orientation": "portrait"
+      },
+      "model": "mock_edit.DeployTargetIOS"
+    }
+  },
+  "model": "mock_edit.DeployManagerConfig",
+  "root": "!10001"
+}

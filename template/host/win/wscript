@@ -1,0 +1,70 @@
+def options( opt ):
+	opt.load( 'compiler_cxx compiler_c' )
+	
+def configure( conf ):
+	conf.load( 'compiler_cxx compiler_c' )
+
+def build( bld ):		
+	hostName = 'moai'
+	binPath = bld.env.GII_BINARY_PATH
+	import os.path
+	if not os.path.exists( binPath + '/win' ):
+		os.mkdir( binPath + '/win' )
+	output = binPath + '/win'
+
+	LIBS_SYSTEM = [
+		'kernel32',
+		'user32',
+		'gdi32',
+		'shell32',
+		'ole32',
+		'comdlg32',
+		'advapi32',
+		'dsound',
+		'strmiids',
+		'advapi32',
+		'comctl32',
+		'oleaut32',
+		'rpcrt4',
+		'winmm',
+		'wldap32',
+		'ws2_32',
+		'wsock32',
+		'iphlpapi',
+		'psapi',
+		'imm32',
+		'version',
+		'opengl32',
+	]
+
+	LIBS_EXTRA = [
+		'SDL2',
+		'SDL2main',
+		'lpeg',
+		'jpg',
+		'ogg',
+		'vorbis'
+	]
+
+	bld.program(
+		source   = 'ParticlePresets.cpp SDLHostMain.cpp SDLHost.cpp',
+		target   = 'moai',
+		name     = 'host-win',
+		use      = 'modules MOAI FMOD extension LUAJIT freejoy',
+
+		includes = '../extension',
+
+		stlib      = LIBS_SYSTEM + LIBS_EXTRA,
+		cxxflags   = [ 
+			'-DMOAI_WITH_LUAEXT', 
+			'-DMOAI_WITH_BOX2D', 
+			'-DMOAI_WITH_FMOD_DESIGNER',
+			'-DMOAI_WITH_HTTP_CLIENT'
+		],
+
+		linkflags = [
+			#'/NODEFAULTLIB:MSVCRTD'
+		],
+
+		install_path = output
+	)

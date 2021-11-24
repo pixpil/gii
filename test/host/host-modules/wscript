@@ -1,0 +1,19 @@
+def build( bld ):
+	use = [ 'MOAI', 'IMGUI' ]
+	target = bld.env.TARGET
+	sources = None
+	if target == 'ios':
+		sources = [ 'aku_modules_ios.mm' ]
+	else:
+		sources = [ 'aku_modules_custom.cpp', 'aku_modules.cpp', 'aku_modules_util.cpp' ]
+	if target == 'html5':
+		use = [ 'MOAIHTML5' ]
+		
+	#bld( includes = '.' )	
+	bld.stlib( 
+		source = sources, 
+		target = 'modules',
+		includes = '..',
+		export_includes = '.',
+		use = use
+	)

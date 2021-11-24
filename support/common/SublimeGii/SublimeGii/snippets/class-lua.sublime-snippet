@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[CLASS: ${1:Foo} (${2:super})
+	:MODEL{${3:}}
+]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.lua</scope>
+    <description>class</description>
+</snippet>

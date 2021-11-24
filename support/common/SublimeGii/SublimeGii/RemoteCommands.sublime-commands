@@ -1,0 +1,44 @@
+[
+    {
+        "caption": "Gii Remote: Start Control Session",
+        "command": "gii_start_control_session",
+        "args": {
+            "inline": false            
+        }
+    },
+    {
+        "caption": "Gii Remote: Send Command",
+        "command": "gii_send_remote",
+        "args": {
+            "inline": false            
+        }
+    },
+    {
+        "caption": "Gii Remote: Reload Script",
+        "command": "gii_reload_script",
+        "args": {
+            "inline": false 
+        }
+    },
+    {
+        "caption": "Gii Remote: Eval Lua Line",
+        "command": "gii_eval",
+        "args": {
+            "inline": false 
+        }
+    },
+    {
+        "caption": "Gii Remote: Eval Lua Script ( Active View ) ",
+        "command": "gii_eval_view",
+        "args": {
+            "inline": false 
+        }
+    },
+    {
+        "caption": "Gii Remote: Remote Eval Lua Script ( Active View ) ",
+        "command": "gii_eval_view_remote",
+        "args": {
+            "inline": false 
+        }
+    }
+]

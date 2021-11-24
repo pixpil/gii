@@ -1,0 +1,60 @@
+def options( opt ):	
+	opt.load( 'compiler_cxx compiler_c' )
+	opt.load( 'python' )
+	opt.load( 'cython' )
+
+def configure( conf ):
+	env = conf.env
+	conf.load( 'compiler_cxx compiler_c' )
+	conf.load( 'python' )
+	conf.load( 'cython' )
+	conf.env.ARCH  = [ 'i386', 'x86_64' ]
+
+def build( bld ):
+	buildTarget = bld.env.TARGET
+	if buildTarget == 'html5':
+		return
+		
+	if buildTarget == 'python':
+		binPath = bld.env.GII_BINARY_PATH
+		import os.path
+		import platform
+		if not os.path.exists( binPath + '/python' ):
+			os.mkdir( binPath + '/python' )
+		output = binPath + '/python'
+
+		INSTALL_NAME = 'freejoy.so'
+		bld(
+			source   = 'freejoy.pyx freejoy.macosx.c',
+			features = 'cxx cxxshlib pyext',
+			target   = INSTALL_NAME,
+			name     = 'freejoy',
+			includes = [ '.', findPythonInclude() ],
+
+			framework = [ 
+				'IOKit' 
+			],
+
+			cxxflags = [ '-fvisibility=default' ],
+
+			linkflags = [
+				'-L/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config'
+			],
+
+			install_path = output
+		)
+	else:
+		bld.stlib( 
+			source = 'freejoy.macosx.c freejoyWrapper.cpp',
+			target = 'freejoy',
+			export_includes = '.',	
+			includes = [ '.' ],
+			cxxflags = [ '-mmacosx-version-min=10.5', '-fvisibility=default' ],
+			framework = [ 
+				'IOKit' 
+			]
+		)
+
+def findPythonInclude():
+	return '/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7'
+

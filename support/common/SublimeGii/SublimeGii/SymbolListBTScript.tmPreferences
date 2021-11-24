@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List BTScript</string>
+	<key>scope</key>
+	<string>entity.sub_name.bt_script</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<string>1</string>
+	</dict>
+	<key>uuid</key>
+	<string>5e05f810-9190-49dc-9ac3-f791769d79a8</string>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+def build( bld ):	
+	bld.stlib( 
+		features = 'c cxx',
+		source   = bld.path.ant_glob( 'src/spine/*.c' ),
+		target   = 'spine',
+		includes = './include',
+		export_includes = './include',
+		cxxflags = '-DSPINE_SHORT_NAMES -g',
+		cflags   = '-DSPINE_SHORT_NAMES -g'
+	)
+
+
+	

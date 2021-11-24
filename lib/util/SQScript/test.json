@@ -1,0 +1,260 @@
+{
+  "children": [
+    {
+      "children": [], 
+      "id": "start", 
+      "line": 3, 
+      "lineCount": 1, 
+      "type": "label"
+    }, 
+    {
+      "children": [
+        {
+          "args": [], 
+          "children": [], 
+          "line": 5, 
+          "lineCount": 1, 
+          "name": "run", 
+          "sub": false, 
+          "type": "action"
+        }, 
+        {
+          "args": [], 
+          "children": [], 
+          "line": 5, 
+          "lineCount": 1, 
+          "name": "go", 
+          "sub": false, 
+          "type": "action"
+        }, 
+        {
+          "args": [], 
+          "children": [], 
+          "line": 5, 
+          "lineCount": 1, 
+          "name": "die", 
+          "sub": false, 
+          "type": "action"
+        }, 
+        {
+          "args": [
+            "loop", 
+            "run"
+          ], 
+          "children": [], 
+          "line": 6, 
+          "lineCount": 1, 
+          "name": "anim", 
+          "sub": false, 
+          "type": "action"
+        }, 
+        {
+          "args": [
+            "0.5"
+          ], 
+          "children": [], 
+          "line": 6, 
+          "lineCount": 1, 
+          "name": "wait", 
+          "sub": false, 
+          "type": "action"
+        }, 
+        {
+          "args": [], 
+          "children": [
+            {
+              "args": [
+                "你好"
+              ], 
+              "children": [], 
+              "line": 8, 
+              "lineCount": 1, 
+              "name": "questlog.name", 
+              "sub": false, 
+              "type": "action"
+            }, 
+            {
+              "args": [
+                "我不知道"
+              ], 
+              "children": [], 
+              "line": 9, 
+              "lineCount": 1, 
+              "name": "questlog.desc", 
+              "sub": false, 
+              "type": "action"
+            }
+          ], 
+          "line": 7, 
+          "lineCount": 1, 
+          "name": "questlog", 
+          "sub": false, 
+          "type": "action"
+        }, 
+        {
+          "args": [
+            "interaction_talk"
+          ], 
+          "children": [
+            {
+              "args": [
+                "talked"
+              ], 
+              "children": [
+                {
+                  "children": [], 
+                  "line": 12, 
+                  "lineCount": 1, 
+                  "tags": [
+                    [
+                      "title", 
+                      "!VisitingDay/!Crisis 111"
+                    ], 
+                    [
+                      "large", 
+                      null
+                    ]
+                  ], 
+                  "type": "tag"
+                }, 
+                {
+                  "children": [], 
+                  "line": 13, 
+                  "lineCount": 1, 
+                  "tags": [
+                    [
+                      "big", 
+                      null
+                    ], 
+                    [
+                      "small", 
+                      null
+                    ]
+                  ], 
+                  "type": "tag"
+                }, 
+                {
+                  "children": [], 
+                  "line": 14, 
+                  "lineCount": 1, 
+                  "name": "id", 
+                  "type": "directive", 
+                  "value": "100"
+                }, 
+                {
+                  "children": [], 
+                  "line": 15, 
+                  "lineCount": 1, 
+                  "name": "deprectaed", 
+                  "type": "directive", 
+                  "value": null
+                }, 
+                {
+                  "args": [
+                    " Talked", 
+                    "nice"
+                  ], 
+                  "children": [], 
+                  "line": 16, 
+                  "lineCount": 2, 
+                  "name": "say", 
+                  "sub": false, 
+                  "type": "action"
+                }, 
+                {
+                  "args": [
+                    " don't "
+                  ], 
+                  "children": [], 
+                  "line": 18, 
+                  "lineCount": 1, 
+                  "name": "say", 
+                  "sub": false, 
+                  "type": "action"
+                }
+              ], 
+              "line": 11, 
+              "lineCount": 1, 
+              "name": "if", 
+              "sub": false, 
+              "type": "action"
+            }, 
+            {
+              "args": [], 
+              "children": [
+                {
+                  "args": [
+                    " Hello"
+                  ], 
+                  "children": [], 
+                  "line": 20, 
+                  "lineCount": 1, 
+                  "name": "say", 
+                  "sub": false, 
+                  "type": "action"
+                }
+              ], 
+              "line": 19, 
+              "lineCount": 1, 
+              "name": "else", 
+              "sub": false, 
+              "type": "action"
+            }, 
+            {
+              "args": [
+                "talk_count"
+              ], 
+              "children": [
+                {
+                  "args": [
+                    "1"
+                  ], 
+                  "children": [
+                    {
+                      "args": [], 
+                      "children": [], 
+                      "line": 24, 
+                      "lineCount": 1, 
+                      "name": "do", 
+                      "sub": false, 
+                      "type": "action"
+                    }
+                  ], 
+                  "line": 23, 
+                  "lineCount": 1, 
+                  "name": "case", 
+                  "sub": false, 
+                  "type": "action"
+                }
+              ], 
+              "line": 22, 
+              "lineCount": 1, 
+              "name": "switch", 
+              "sub": false, 
+              "type": "action"
+            }
+          ], 
+          "line": 10, 
+          "lineCount": 1, 
+          "name": "on", 
+          "sub": false, 
+          "type": "action"
+        }
+      ], 
+      "line": 4, 
+      "lineCount": 1, 
+      "names": [
+        "Jasper", 
+        "John", 
+        "Sam", 
+        "Recard", 
+        "Charlie"
+      ], 
+      "type": "context"
+    }
+  ], 
+  "file": "<noname>", 
+  "line": 0, 
+  "lineCount": 0, 
+  "type": "root"
+}

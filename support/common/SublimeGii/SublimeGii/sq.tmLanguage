@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>sq</string>
+	</array>
+	<key>name</key>
+	<string>SQ Script</string>
+	
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\s*rem .*</string>
+			<key>name</key>
+			<string>markup.inserted.sidenote.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\s*music .*</string>
+			<key>name</key>
+			<string>markup.deleted.music.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\s*sound .*</string>
+			<key>name</key>
+			<string>markup.deleted.sound.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\s*todo .*</string>
+			<key>name</key>
+			<string>markup.inserted.sidenote.sq_script</string>
+		</dict>
+		
+		<dict>
+			<key>match</key>
+			<string>\s*screenshot .*</string>
+			<key>name</key>
+			<string>markup.inserted.sidenote.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>//:.*$</string>
+			<key>name</key>
+			<string>support.contextnote.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^(\t*)(checkpoint)\s*(.*)</string>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.checkpoint_keyword.sq_script</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>constant.checkpoint_name.sq_script</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>entity.checkpoint.sq_script</string>
+		</dict>
+
+		<!-- <dict>
+			<key>match</key>
+			<string>//.*$</string>
+			<key>name</key>
+			<string>comment.line.sq_script</string>
+		</dict> -->
+
+		<dict>
+			<key>begin</key>
+			<string>//</string>
+			
+			<key>end</key>
+			<string>$</string>
+
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\$\w+(\([^()]*\))?</string>
+					<key>name</key>
+					<string>markup.deleted.inline_directive.sq_script</string>
+				</dict>
+			</array>
+
+			<key>name</key>
+			<string>comment.line.sq_script</string>
+		</dict>
+		
+		<dict>
+			<key>match</key>
+			<string>^\s*\!\s*\w*</string>
+			<key>name</key>
+			<string>entity.label.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*@\s*[@ \w\.,]*</string>
+			<key>name</key>
+			<string>variable.context.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*\$.*$</string>
+			<key>name</key>
+			<string>comment.directive.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*#.*$</string>
+			<key>name</key>
+			<string>support.tag.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.on.sq_script</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.msg_name.sq_script</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(on)\s+([\w.]+)</string>
+			<key>name</key>
+			<string>entity.on.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>begin</key>
+			<string>^(\t*)(\.?\w+\s*:)\s*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.node_name.sq_script</string>
+				</dict>
+			</dict>
+
+			<key>end</key>
+			<string>^(?!(\1\t+))</string>
+			
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>//</string>
+					
+					<key>end</key>
+					<string>$</string>
+
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>\$\w+(\([^()]*\))?</string>
+							<key>name</key>
+							<string>support.inline_directive.sq_script</string>
+						</dict>
+					</array>
+
+					<key>name</key>
+					<string>comment.line.sq_script</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>{[^}]*}</string>
+					<key>name</key>
+					<string>keyword.operator.dialog_command.sq_script</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>&lt;/?\w*&gt;</string>
+					<key>name</key>
+					<string>keyword.operator.dialog_command.sq_script</string>
+				</dict>
+			</array>
+			<key>name</key>
+			<string>string.long_line.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*FF\s*.*</string>
+			<key>name</key>
+			<string>support.fast_forward.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*(\.?\w+)</string>
+			<key>name</key>
+			<string>keyword.node_name.sq_script</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(;)\s*(\w+)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.sq_script</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.node_name.sq_script</string>
+				</dict>
+			</dict>
+		</dict>
+
+
+	</array>
+	
+	<key>scopeName</key>
+	<string>source.sq_script</string>
+	<key>uuid</key>
+	<string>54e1835c-22b2-4f17-aa5c-1cd5fd4a0241</string>
+</dict>
+</plist>

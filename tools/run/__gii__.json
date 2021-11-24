@@ -1,0 +1,6 @@
+{
+	"name"     : "run",
+	"priority" : 1,
+	"help"     : "run current project in a standalone host",
+	"autoload" : false
+}

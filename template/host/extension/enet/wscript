@@ -1,0 +1,22 @@
+import sys
+
+def build( bld ):
+	source = ['callbacks.c', 'compress.c', 'host.c', 'list.c', 'packet.c', 'peer.c', 'protocol.c' ]
+	if sys.platform == 'win32':
+		source += ['win32.c']
+	else:
+		source += ['unix.c']
+
+	if bld.env.TARGET == 'html5':
+		cflags = [ '-DHAS_SOCKLEN_T' ]
+	else:
+		cflags = []
+
+	bld.stlib( 
+		source = source,
+		target = 'enet',
+		includes = './include',
+		export_includes = './include',
+		cflags = cflags,
+		use = ''
+	)

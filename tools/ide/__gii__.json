@@ -1,0 +1,6 @@
+{
+	"name"     : "ide",
+	"priority" : 1,
+	"help"     : "start the IDE",
+	"autoload" : false
+}

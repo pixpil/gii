@@ -1,0 +1,55 @@
+def options( opt ):
+	opt.load( 'compiler_cxx compiler_c' )
+	
+def configure( conf ):
+	conf.load( 'compiler_cxx compiler_c' )
+	config = conf.env.PROFILE
+	print 'osx config', config
+
+def build( bld ):		
+	hostName = 'moai'
+	binPath = bld.env.GII_BINARY_PATH
+	import os.path
+	if not os.path.exists( binPath + '/osx' ):
+		os.mkdir( binPath + '/osx' )
+	output = binPath + '/osx'
+	LIBS_SYSTEM = [ 'System', 'crypto', 'ssl', 'objc', 'stdc++', 'c' ]
+	bld.program(
+		source   = 'ParticlePresets.cpp SDLHostMain.cpp SDLHost.cpp',
+		target   = 'moai',
+		name     = 'host-osx',
+		use      = 'modules IMGUI MOAI FMOD extension freejoy',
+
+		includes = '../extension',
+
+		framework = [ 
+			'CoreAudio',
+			'CoreServices',
+			'CoreFoundation',
+			'Foundation',
+			'AudioUnit',
+			'AudioToolbox',
+			# 'GLUT',
+			'IOKit',
+			'OpenGL',
+			'Cocoa',
+			'Carbon',
+			'ForceFeedback'
+		],
+
+		stlib      = LIBS_SYSTEM,
+		cxxflags   = [ 
+			'-DMOAI_WITH_LUAEXT', 
+			'-DMOAI_WITH_BOX2D', 
+			'-DMOAI_WITH_FMOD_DESIGNER',
+			'-DMOAI_WITH_HTTP_CLIENT',
+		],
+
+		linkflags = [
+			'-stdlib=libstdc++',
+			'-mmacosx-version-min=10.5',
+			#'-lluajit'
+		],
+
+		install_path = output
+	)

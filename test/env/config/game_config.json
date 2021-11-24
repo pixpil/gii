@@ -1,0 +1,135 @@
+{
+  "asset_library": "env/config/asset_table.output",
+  "asset_tag_groups": {},
+  "audio": {
+    "unitsToMeters": 1
+  },
+  "default_locale": "en",
+  "display_title": {},
+  "entry_scene": "TestUILight.scene",
+  "global_managers": {
+    "QuestManager": {
+      "sessions": {}
+    },
+    "ScenePortalRegistry": {
+      "graphs": [
+        "config/Test.portal.graphml",
+        "config/World.portal.graphml"
+      ]
+    }
+  },
+  "global_objects": {
+    "children": {
+      "Test": {
+        "children": {
+          "vars": {
+            "name": "vars",
+            "object": {
+              "map": {
+                "!10001": {
+                  "body": {},
+                  "extra": [
+                    {
+                      "desc": "",
+                      "name": "score",
+                      "value": 1357,
+                      "vtype": "int"
+                    },
+                    {
+                      "desc": "",
+                      "name": "name",
+                      "value": "John",
+                      "vtype": "string"
+                    }
+                  ],
+                  "model": "mock.ControlVariableSet"
+                }
+              },
+              "model": "mock.ControlVariableSet",
+              "root": "!10001"
+            },
+            "type": "object"
+          }
+        },
+        "name": "Test",
+        "type": "group"
+      }
+    },
+    "name": "GlobalObjectNode",
+    "type": "group"
+  },
+  "graphics": {
+    "device_height": 720,
+    "device_width": 1280,
+    "fullscreen": false,
+    "height": 720,
+    "scaled_output": false,
+    "viewport_mode": "fit",
+    "vsync": false,
+    "width": 1280,
+    "zoom": 1
+  },
+  "input": {
+    "allowTouchSimulation": false
+  },
+  "layers": [
+    {
+      "default": true,
+      "editor_visible": true,
+      "locked": false,
+      "name": "main",
+      "parallax": [
+        1,
+        1,
+        1
+      ],
+      "sort": "z_ascending",
+      "visible": true
+    },
+    {
+      "default": false,
+      "editor_visible": true,
+      "name": "default",
+      "parallax": [
+        1,
+        1
+      ],
+      "sort": "priority_ascending",
+      "visible": true
+    },
+    {
+      "default": false,
+      "editor_visible": true,
+      "locked": false,
+      "name": "output",
+      "parallax": [
+        1,
+        1,
+        1
+      ],
+      "sort": "z_ascending",
+      "visible": true
+    }
+  ],
+  "name": "Eastward",
+  "physics": {
+    "angularSleepTolerance": 0,
+    "autoClearForces": true,
+    "gravity": [
+      0,
+      -10
+    ],
+    "linearSleepTolerance": 0,
+    "positionIterations": 8,
+    "timeToSleep": 0,
+    "unitsToMeters": 0.01,
+    "velocityIterations": 6,
+    "world": "EWBox2DWorld"
+  },
+  "scenes": {},
+  "system": {},
+  "texture_library": "env/config/texture_library.json",
+  "title": "Eastward",
+  "vendor": "GiiProject",
+  "version": "0.0.1"
+}

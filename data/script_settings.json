@@ -1,0 +1,310 @@
+{
+	"selectionBackground": {
+		"a": 1,
+		"r": 0.5,
+		"b": 0.5,
+		"g": 1
+	},
+	"indentGuideColor": {
+		"a": 1,
+		"r": 0.80000001192092995,
+		"b": 0.80000001192092995,
+		"g": 0.80000001192092995
+	},
+	"defaultBGColor": {
+		"a": 1,
+		"r": 1,
+		"b": 1,
+		"g": 1
+	},
+	"longLineOnEnable": false,
+	"dividerMargin": 6,
+	"overTypeInitial": false,
+	"displayEOLEnable": false,
+	"wrapModeInitial": false,
+	"readOnlyInitial": false,
+	"indentGuideEnable": true,
+	"caretVisible": true,
+	"syntaxEnable": true,
+	"lineNumberEnable": true,
+	"tabWidth": 2,
+	"foldEnable": true,
+	"lineNumberBgColor": {
+		"a": 1,
+		"r": 1,
+		"b": 1,
+		"g": 1
+	},
+	"defaultColor": {
+		"a": 1,
+		"r": 0,
+		"b": 0,
+		"g": 0
+	},
+	"whiteSpaceEnable": false,
+	"lineNumberColor": {
+		"a": 1,
+		"r": 0,
+		"b": 0,
+		"g": 0
+	},
+	"caretBackground": {
+		"a": 1,
+		"r": 0.80000001192092995,
+		"b": 0.80000001192092995,
+		"g": 0.80000001192092995
+	},
+	"keywords": [{
+		"id": 0,
+		"name": "Instruction",
+		"keywords": "function end do for in local return then if else elseif while loop repeat until or and not"
+	}, {
+		"id": 1,
+		"name": "Func1",
+		"keywords": "table string math pairs ipairs next select pack unpack setmetatable getmetatable\rgii class"
+	}],
+	"indentEnable": true,
+	"foldingMargin": 12,
+	"breakPointMargin": 12,
+	"styles": [{
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 0,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 0,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "default"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 1,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 0,
+			"g": 0.5
+		},
+		"bold": 0,
+		"name": "comment"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 2,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 0,
+			"g": 0.5
+		},
+		"bold": 0,
+		"name": "comment line"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 3,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 0,
+			"g": 0.5
+		},
+		"bold": 0,
+		"name": "comment doc"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 4,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 1,
+			"b": 0,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "number"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 5,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 1,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "instruction"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 6,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0.5,
+			"b": 0,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "string"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 7,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0.5,
+			"b": 0,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "character"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 10,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0.20000000298022999,
+			"b": 0.20000000298022999,
+			"g": 0.20000000298022999
+		},
+		"bold": 0,
+		"name": "operator"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 11,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 0,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "ident"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 12,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0.5,
+			"b": 0,
+			"g": 0
+		},
+		"bold": 0,
+		"name": "string eol"
+	}, {
+		"font": "Anonymous Pro, Consolas",
+		"bg": {
+			"a": 1,
+			"r": 1,
+			"b": 1,
+			"g": 1
+		},
+		"italic": 0,
+		"underline": 0,
+		"id": 13,
+		"size": 12,
+		"fg": {
+			"a": 1,
+			"r": 0,
+			"b": 1,
+			"g": 0.5
+		},
+		"bold": 0,
+		"name": "func1"
+	}]
+}

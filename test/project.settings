@@ -1,0 +1,5 @@
+[svn_remote]
+	[svn_remote.ew]
+	url = 'https://192.168.11.3:447/svn/eastward'
+	username = 'studio'
+	password = '1103'

@@ -1,0 +1,5 @@
+{
+	"name"     : "RemoteInput",
+	"info"     : "A browser based remote touch input simulator",
+	"active"   : false
+}

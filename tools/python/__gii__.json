@@ -1,0 +1,6 @@
+{
+	"name"     : "python",
+	"priority" : 1,
+	"help"     : "run python script with GII module environment",
+	"autoload" : false
+}

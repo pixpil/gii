@@ -1,0 +1,101 @@
+# encoding: utf-8
+
+VERSION = '0.0.1'
+APPNAME = 'gii-host'
+
+top = '.'
+out = '../bin/_build'
+
+import waf_utils
+import moai_env
+
+_AVAILABLE_TARGET  = [ 
+	'osx',
+	'python',
+	'ios',
+	'html5'
+]
+
+_DEPENDENCIES      = [ 'host-modules', 'extension', 'freejoy', 'sdl-common' ]
+_AVAILABLE_CONFIG  = [ 'debug', 'release' ]
+_TARGET_ARCH       = {
+	# 'osx'           : 'i386',
+	'osx'           : 'x86_64',
+	# 'python'        : 'i386',
+	'html5'         : 'js',
+	'python'        : 'x86_64',
+	'ios'           : 'armv7',
+	'ios-simulator' : 'i386',
+	'android'       : 'android'
+}
+
+#----------------------------------------------------------------##
+def init( ctx ):
+	from waflib.Build import BuildContext,InstallContext
+	for target in _AVAILABLE_TARGET:
+		for config in _AVAILABLE_CONFIG:
+			name = '%s-%s' % ( target, config )
+			class TargetBuildContext( BuildContext ):
+				cmd     = 'build-'+name
+				variant = name
+			class TargetInstallContext( InstallContext ):
+				cmd     = 'install-'+name
+				variant = name
+
+def options( opt ):	
+	opt.load( 'compiler_cxx compiler_c' )
+	opt.recurse( _AVAILABLE_TARGET )
+
+def configure( conf ):
+	env = conf.env
+	conf.load( 'compiler_cxx compiler_c' )
+	
+	for config in _AVAILABLE_CONFIG:
+		for target in _AVAILABLE_TARGET:
+			name = '%s-%s' % ( target, config )
+			conf.setenv( name, env.derive() )
+			conf.env.NAME      = name
+			conf.env.TARGET    = target
+			conf.env.ARCH      = [ _TARGET_ARCH[ target ] ]
+			conf.env.CXXFLAGS  = [ '-fno-rtti', '-fvisibility-inlines-hidden', '-fvisibility=hidden' ]
+			conf.env.CFLAGS    = []
+			conf.env.LINKFLAGS = []
+			if config == 'debug':
+				conf.env.CXXFLAGS += [ '-g' ]
+				conf.env.CFLAGS   += [ '-g' ]
+			else:
+				conf.env.CXXFLAGS += [ '-O2' ]
+				conf.env.CFLAGS   += [ '-O2' ]
+			conf.env.GII_BINARY_PATH = conf.path.parent.abspath() + '/bin'
+
+			if target == 'html5':
+				conf.env.TARGET_OS = 'browser'
+				conf.env.ARCH = None
+				conf.env.CXXFLAGS += ['-Wno-warn-absolute-paths']
+				conf.env.CFLAGS += ['-Wno-warn-absolute-paths']
+				moai_env.setup_moai_html5_env( conf, target, config )
+
+			else:
+				moai_env.setup_moai_env( conf, target, config )
+				moai_env.setup_fmod_env( conf, target, config )
+
+			conf.recurse( target )
+	
+def build( bld ):
+	target = bld.env.TARGET
+	if bld.cmd == 'build':
+		for target in _AVAILABLE_TARGET:
+			for config in _AVAILABLE_CONFIG:
+				name = '%s-%s' % ( target, config )
+				print 'build-' + name
+
+		for target in _AVAILABLE_TARGET:
+			for config in _AVAILABLE_CONFIG:
+				name = '%s-%s' % ( target, config )
+				print 'install-' + name
+		bld.fatal( 'expected above build targets' )
+
+	bld.recurse( _DEPENDENCIES )
+	bld.recurse( target )
+
+

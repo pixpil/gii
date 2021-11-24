@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>88E4F0AC-C6AD-418F-8371-B176BAB46854</string>
+	<key>IDESourceControlProjectName</key>
+	<string>gii</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>63C4897045D0EF88507AD257AEF500CB53038CE0</key>
+		<string>/Users/tommo/prj/repos/moai-tommo.git</string>
+		<key>DF5CF641AE3AD5751A69FD48A702F83B5AAC417B</key>
+		<string>/Users/tommo/prj/repos/deadend.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>host/ios/gii.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>63C4897045D0EF88507AD257AEF500CB53038CE0</key>
+		<string>../../../../../Users/tommo/dev/moai-dev</string>
+		<key>DF5CF641AE3AD5751A69FD48A702F83B5AAC417B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>/Users/tommo/prj/repos/deadend.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF5CF641AE3AD5751A69FD48A702F83B5AAC417B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF5CF641AE3AD5751A69FD48A702F83B5AAC417B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gang</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>63C4897045D0EF88507AD257AEF500CB53038CE0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>moai-dev</string>
+		</dict>
+	</array>
+</dict>
+</plist>

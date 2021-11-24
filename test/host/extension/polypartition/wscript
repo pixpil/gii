@@ -1,0 +1,9 @@
+def build( bld ):	
+	bld.stlib( 
+		features = 'c cxx',
+		source   = bld.path.ant_glob( '*.cpp' ),
+		target   = 'polypartition',
+		includes = '.',
+		export_includes = '.',
+		cxxflags = [ '-stdlib=libstdc++' ]
+	)

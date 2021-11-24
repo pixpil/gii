@@ -1,0 +1,62 @@
+def options( opt ):
+	opt.load( "emcc", tooldir = "waf-tools" )
+	
+def configure( conf ):
+	conf.load( "emcc", tooldir = "waf-tools" )
+	conf.load( "emxx", tooldir = "waf-tools" )
+	# conf.env.CXXFLAGS='-s', 'LINKABLE=1'
+def build( bld ):
+
+	hostName = 'moai'
+	binPath = bld.env.GII_BINARY_PATH
+	
+	exportedFunctions = "['_malloc','_RefreshContext','_Cleanup','_onKeyDown','_onKeyUp','_onMouseButton','_onMouseDrag','_onMouseMove','_onPaint','_onReshape','_onTimer','_AKULoadFuncFromString','_AKULoadFuncFromFile','_AKUCallFunc','_OpenWindowFunc','_AKUSetWorkingDirectory','_AKUGetSimStep','_AKUEnqueueKeyboardShiftEvent','_AKUEnqueueKeyboardControlEvent','_AKUEnqueueKeyboardAltEvent','_RestoreFile','_AKUInitializeUntz','_MoaiOpenWindowFunc','_MoaiSaveFunc']"
+	bld.env.cxxshlib_PATTERN = 'lib%s.so'
+	bld.shlib(
+		source   = [ 
+			'../host-modules/aku_modules.cpp',
+			'HtmlHost.cpp'
+		],
+
+		target   = 'moaijs',
+		name     = 'host-html5',
+		use      = 'MOAIHTML5 extension',
+
+		includes = [
+			'../extension',
+			'../host-modules'
+		],
+		
+		cxxflags   = [ 
+			'-DAKU_WITH_FMOD_DESIGNER=0',
+			'-DAKU_WITH_UNTZ=1',
+			'-DAKU_WITH_FMOD_EX=0'			
+		],
+
+		linkflags = [
+			'-O2',
+			'-fPIC',
+			# '-Wl,r'
+			# '-g',
+			# '-s', 'ASM_JS=0',
+			# '-s', 'TOTAL_MEMORY=248554432',
+			# '-s', 'FULL_ES2=1',
+			# '-s', 'LINKABLE=1',
+			'-Wno-warn-absolute-paths',
+			# '-Wl,-soname,libmoaijs.so',
+			# '--js-library','%s/moaicallbacks.js' % bld.path.abspath(),
+			# # '--js-library','%s/library_webuntz.js' % bld.path.abspath(),
+			# '--pre-js','%s/libmoai-pre.js' % bld.path.abspath(),
+			# '--post-js','%s/libmoai-post.js' % bld.path.abspath(),
+			# '-s','EXPORTED_FUNCTIONS="%s"' % exportedFunctions ,
+			# '-s INVOKE_RUN=0'
+		],
+	)
+
+	bld(
+		name  = 'post',
+		after = 'moaijs',
+		rule = 'echo done!',
+		# use = 'MOAIHTML5 extension moaijs'
+	)
+	

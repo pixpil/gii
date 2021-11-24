@@ -1,0 +1,12 @@
+[
+	{ "keys": [ "super+\\" ], "command": "gii_start_control_session" },
+	{ "keys": [ "ctrl+r" ], "command": "gii_reload_script" },
+	{ "keys": [ "ctrl+super+r" ], "command": "gii_reload_game_script" },
+	{ "keys": [ "ctrl+]" ], "command": "gii_preview_start" },
+	{ "keys": [ "ctrl+[" ], "command": "gii_preview_stop" },
+	{ "keys": [ "ctrl+alt+[" ], "command": "gii_stop_extern_run" },
+	{ "keys": [ "ctrl+alt+]" ], "command": "gii_run_scene" },
+	{ "keys": [ "ctrl+alt+shift+]" ], "command": "gii_run_game" },
+	{ "keys": [ "ctrl+y" ], "command": "gii_eval_view" },
+	{ "keys": [ "ctrl+shift+y" ], "command": "gii_eval_view_remote" }
+]

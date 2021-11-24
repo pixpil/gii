@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[CLASS: ${1:Foo} (${2:mock.Entity})
+	:MODEL{${3:}}
+
+mock.registerEntity( '$1', $1 )
+
+]]></content>
+    <tabTrigger>classe</tabTrigger>
+    <scope>source.lua</scope>
+    <description>class</description>
+</snippet>

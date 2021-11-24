@@ -1,0 +1,33 @@
+def build( bld ):
+	cxxflags = [ '-DSPINE_SHORT_NAMES' ]
+	cflags = [ '-DSPINE_SHORT_NAMES' ]
+	use = [ 'FMOD', 'spine', 'moai-steer', 'clipper', 'polypartition' ]
+	linkflags = []
+
+	if bld.env.TARGET in [ 'osx', 'python' ] :
+		cxxflags += [ '-mmacosx-version-min=10.5' ]
+
+	if bld.env.TARGET == 'html5' :
+		use += ['MOAIHTML5']
+		cxxflags += [ '-DHAS_SOCKLEN_T' ]
+		cflags += [ '-DHAS_SOCKLEN_T' ]
+		linkflags += [ '-s','LINKABLE=1' ]
+	else:
+		use += ['MOAI']
+	sources =  bld.path.ant_glob( '*.cpp' )
+	sources += bld.path.ant_glob( '*.c' )
+	bld( includes = '.' )
+	
+	bld.recurse( 'spine' )
+	bld.recurse( 'clipper' )
+	bld.recurse( 'polypartition' )
+
+	bld.stlib( 
+		source = sources, 
+		target = 'extension',
+		use    = use,
+		cxxflags = cxxflags,
+		cflags   = cflags,
+		linkflags = linkflags
+	)
+

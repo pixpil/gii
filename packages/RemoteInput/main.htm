@@ -1,0 +1,221 @@
+<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<title>Remote Input Portal</title> 
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<style> 
+		#no {
+			display: none;	
+		}
+		
+		@media screen {
+			html, body, div, span {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				outline: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+			}			
+			body {
+				height: auto;
+				-webkit-text-size-adjust:none;
+				font-family:Helvetica, Arial, Verdana, sans-serif;
+				padding:0px;
+				overflow-x: hidden;		
+			}		
+			
+			.outer {
+				background: rgba(123, 256, 245, 0.9);
+				padding: 0px;
+				min-height: 48px;
+				
+			}
+			
+			.box {
+				position: relative;
+				float: left;
+				width: 45%;
+				padding: 7px;
+				border: 1px solid rgba(255, 255, 255, 0.6);
+				background: rgba(178,215,255,0.75);
+				min-height: 160px;
+			}	
+			
+			.box2 {
+				position: relative;
+				float: left;
+				width: 45%;
+				padding: 7px;
+				border: 1px solid rgba(255, 255, 255, 0.6);
+				background: rgba(178,215,255,0.75);
+			}	
+			
+			.box span {
+				display: block;
+			}
+			
+			span.head {
+				font-weight: bold;				
+			}
+		
+		}
+		</style> 
+	</head> 
+
+	<body>
+		<div id="yes"> 
+		</div>
+		<div id="no">
+			Your browser does not support Device Orientation and Motion API. Try this sample with iPhone, iPod or iPad with iOS 4.2+.    
+		</div>
+		
+		<script> 
+
+		var wsUri = "ws://" + location.hostname + ":" + 8037;
+    var output;
+    var websocket;
+
+    function init()
+    {
+        output = document.getElementById("output");
+        wsConnect();
+    }
+
+    function wsConnect()
+    {
+        console.log("Trying connection to " + wsUri);
+        try
+        {
+            output = document.getElementById("output");
+            websocket = new WebSocket(wsUri);
+            websocket.onopen = function(evt)
+            {
+                    onOpen(evt)
+            };
+            websocket.onclose = function(evt)
+            {
+                    onClose(evt)
+            };
+            websocket.onmessage = function(evt)
+            {
+                    onMessage(evt)
+            };
+            websocket.onerror = function(evt)
+            {
+                    onError(evt)
+            };
+        }
+        catch (e)
+        {
+            console.log("Exception " + e.toString());
+        }
+    }
+
+
+    function onOpen(evt)
+    {
+        console.log("Connected to " + wsUri);
+    }
+
+    function onClose(evt)
+    {
+        console.log("Disconnected");
+    }
+
+    function onMessage(evt)
+    {
+        console.log('Received message : ' + evt.data);
+    }
+
+    function onError(evt)
+    {
+        console.log("Error : " + evt.toString());
+    }
+
+    function doSend(message)
+    {
+        websocket.send(message);
+    }
+
+    window.addEventListener("load", init, false);
+
+		function makeHttpObject() {
+				try {return new XMLHttpRequest();}
+				catch (error) {}
+				try {return new ActiveXObject("Msxml2.XMLHTTP");}
+				catch (error) {}
+				try {return new ActiveXObject("Microsoft.XMLHTTP");}
+				catch (error) {}
+				throw new Error("Could not create HTTP request object.");
+			}
+
+		var request = makeHttpObject();
+		var motionEnabled = false;
+		var orientEnabled = false;
+		var touchEnabled  = true;
+
+
+		function sendInput( ev, id, x, y, z ) {
+			var query = "@";
+			query = query + ev;
+			query = query + ',' + id;
+			query = query + ',' + x;
+			query = query + ',' + y;
+			query = query + ',' + z;
+			// request.open( "GET", query, false );
+			// request.send(null);
+			doSend( query );
+		}
+
+			if (window.DeviceMotionEvent==undefined) {
+				document.getElementById("no").style.display="block";
+				document.getElementById("yes").style.display="none";
+			} 
+			else
+			{
+				window.ondevicemotion = function(event) {
+					var ax = event.accelerationIncludingGravity.x;
+					var ay = event.accelerationIncludingGravity.y;
+					var az = event.accelerationIncludingGravity.z;
+					if (motionEnabled) sendInput( 'm', 0, ax, ay, az );					
+				}
+								
+				window.ondeviceorientation = function(event) {
+					var alpha = event.alpha;
+					var beta  = event.beta;
+					var gamma = event.gamma;
+					if ( orientEnabled ) sendInput( 'o', 0, alpha, beta, gamma );
+				}				
+				
+				window.addEventListener('touchmove', function(event) {
+					event.preventDefault();
+					if (!touchEnabled) return;
+					for( var i = 0; i < event.changedTouches.length; i++ ) {
+						var touch = event.changedTouches[i];
+						sendInput( 'tm', touch.identifier, touch.screenX, touch.screenY, 0 )
+					}
+				});
+
+				window.addEventListener('touchstart', function(event) {
+					if (!touchEnabled) return;
+					for( var i = 0; i < event.changedTouches.length; i++ ) {
+						var touch = event.changedTouches[i];
+						sendInput( 'ts', touch.identifier, touch.screenX, touch.screenY, 0 )
+					}
+				});
+
+				window.addEventListener('touchend', function(event) {
+					if (!touchEnabled) return;
+					for( var i = 0; i < event.changedTouches.length; i++ ) {
+						var touch = event.changedTouches[i];
+						sendInput( 'te', touch.identifier, touch.screenX, touch.screenY, 0 )
+					}
+				});
+
+			} 
+			</script> 
+		</body> 
+</html> 

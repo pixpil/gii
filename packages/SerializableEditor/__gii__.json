@@ -1,0 +1,6 @@
+{
+	"name"     : "SerializableEditor",
+	"info"     : "Serializable Asset Editor",
+	"active"   : true,
+	"dependency" : [ "Mock" ]
+}

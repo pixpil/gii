@@ -1,0 +1,1 @@
+fruitstrap -d -b $1 $2

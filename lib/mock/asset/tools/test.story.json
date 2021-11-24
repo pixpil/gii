@@ -1,0 +1,448 @@
+{
+  "edges": [
+    {
+      "dst": "TestDialog::n1", 
+      "label": "", 
+      "src": "TestDialog::n2", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestDialog::n1", 
+      "label": "", 
+      "src": "TestDialog::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestDialog::n3", 
+      "label": "", 
+      "src": "TestDialog::n1", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3::n2", 
+      "label": "", 
+      "src": "TestFlag::n3::n1", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1::n1", 
+      "label": "", 
+      "src": "TestFlag::n1::n2", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1::n2", 
+      "label": "", 
+      "src": "TestFlag::n1::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3::n7", 
+      "label": "", 
+      "src": "TestFlag::n3::n2", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1::n3", 
+      "label": "", 
+      "src": "TestFlag::n1::n2", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n8", 
+      "label": "", 
+      "src": "TestFlag::n6", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3::n2", 
+      "label": "", 
+      "src": "TestFlag::n7", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n5", 
+      "label": "", 
+      "src": "TestFlag::n8", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1::n4", 
+      "label": "", 
+      "src": "TestFlag::n1::n1", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3::n4", 
+      "label": "", 
+      "src": "TestFlag::n3::n3", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n9::n0", 
+      "label": "", 
+      "src": "TestFlag::n9::n1", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1::n4", 
+      "label": "", 
+      "src": "TestFlag::n6", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n9", 
+      "label": "", 
+      "src": "TestFlag::n3", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3", 
+      "label": "", 
+      "src": "TestFlag::n4", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n8", 
+      "label": "", 
+      "src": "TestFlag::n7", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3::n6", 
+      "label": "", 
+      "src": "TestFlag::n3::n5", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n7", 
+      "label": "", 
+      "src": "TestFlag::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n6", 
+      "label": "", 
+      "src": "TestFlag::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3", 
+      "label": "", 
+      "src": "TestFlag::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1", 
+      "label": "", 
+      "src": "TestFlag::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n1", 
+      "label": "", 
+      "src": "TestFlag::n2", 
+      "visual": {}
+    }, 
+    {
+      "dst": "TestFlag::n3::n1", 
+      "label": "", 
+      "src": "TestFlag::n3::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "_root::n2", 
+      "label": "", 
+      "src": "_root::n3", 
+      "visual": {}
+    }, 
+    {
+      "dst": "_root::n1", 
+      "label": "", 
+      "src": "_root::n0", 
+      "visual": {}
+    }, 
+    {
+      "dst": "_root::n3", 
+      "label": "", 
+      "src": "_root::n1", 
+      "visual": {}
+    }
+  ], 
+  "rootNodes": [
+    {
+      "fullId": "_root::n0", 
+      "group": false, 
+      "id": "n0", 
+      "label": "START", 
+      "type": "START", 
+      "visual": {}
+    }, 
+    {
+      "children": [
+        {
+          "fullId": "TestDialog::n0", 
+          "group": "_root::n1", 
+          "id": "n0", 
+          "label": "START", 
+          "type": "START", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestDialog::n1", 
+          "group": "_root::n1", 
+          "id": "n1", 
+          "label": "hello", 
+          "type": "DIALOG", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestDialog::n2", 
+          "group": "_root::n1", 
+          "id": "n2", 
+          "label": "John", 
+          "type": "ROLE", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestDialog::n3", 
+          "group": "_root::n1", 
+          "id": "n3", 
+          "label": "END", 
+          "type": "END", 
+          "visual": {}
+        }
+      ], 
+      "fullId": "_root::n1", 
+      "group": false, 
+      "id": "n1", 
+      "label": "TestDialog", 
+      "type": "REF", 
+      "visual": {}
+    }, 
+    {
+      "fullId": "_root::n2", 
+      "group": false, 
+      "id": "n2", 
+      "label": "END", 
+      "type": "END", 
+      "visual": {}
+    }, 
+    {
+      "children": [
+        {
+          "fullId": "TestFlag::n8", 
+          "group": "_root::n3", 
+          "id": "n8", 
+          "label": "AND", 
+          "type": "AND", 
+          "visual": {}
+        }, 
+        {
+          "children": [
+            {
+              "fullId": "TestFlag::n9::n0", 
+              "group": "TestFlag::n9", 
+              "id": "n9::n0", 
+              "label": "I apprecieate that!", 
+              "type": "DIALOG", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n9::n1", 
+              "group": "TestFlag::n9", 
+              "id": "n9::n1", 
+              "label": "TALK", 
+              "type": "INPUT", 
+              "visual": {}
+            }
+          ], 
+          "fullId": "TestFlag::n9", 
+          "group": "_root::n3", 
+          "id": "n9", 
+          "label": "Bill received package", 
+          "type": "GROUP", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestFlag::n0", 
+          "group": "_root::n3", 
+          "id": "n0", 
+          "label": "START", 
+          "type": "START", 
+          "visual": {}
+        }, 
+        {
+          "children": [
+            {
+              "fullId": "TestFlag::n1::n0", 
+              "group": "TestFlag::n1", 
+              "id": "n1::n0", 
+              "label": "TALK", 
+              "type": "INPUT", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n1::n1", 
+              "group": "TestFlag::n1", 
+              "id": "n1::n1", 
+              "label": "Talk Flag is True now", 
+              "type": "DIALOG", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n1::n2", 
+              "group": "TestFlag::n1", 
+              "id": "n1::n2", 
+              "label": "$talked", 
+              "type": "FLAG", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n1::n3", 
+              "group": "TestFlag::n1", 
+              "id": "n1::n3", 
+              "label": "Already talked", 
+              "type": "DIALOG", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n1::n4", 
+              "group": "TestFlag::n1", 
+              "id": "n1::n4", 
+              "label": "$talked", 
+              "type": "FLAG_SET", 
+              "visual": {}
+            }
+          ], 
+          "fullId": "TestFlag::n1", 
+          "group": "_root::n3", 
+          "id": "n1", 
+          "label": "state", 
+          "type": "GROUP", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestFlag::n2", 
+          "group": "_root::n3", 
+          "id": "n2", 
+          "label": "John", 
+          "type": "ROLE", 
+          "visual": {}
+        }, 
+        {
+          "children": [
+            {
+              "fullId": "TestFlag::n3::n0", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n0", 
+              "label": "ITEM: package", 
+              "type": "INPUT", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n1", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n1", 
+              "label": "Thank you!!", 
+              "type": "DIALOG", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n2", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n2", 
+              "label": "$package_received", 
+              "type": "FLAG_SET", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n3", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n3", 
+              "label": "TALK", 
+              "type": "INPUT", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n4", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n4", 
+              "label": "Do you have my package?", 
+              "type": "DIALOG", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n5", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n5", 
+              "label": "TIMED", 
+              "type": "INPUT", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n6", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n6", 
+              "label": "I'm expecting my package..", 
+              "type": "DIALOG_Q", 
+              "visual": {}
+            }, 
+            {
+              "fullId": "TestFlag::n3::n7", 
+              "group": "TestFlag::n3", 
+              "id": "n3::n7", 
+              "label": "END", 
+              "type": "END", 
+              "visual": {}
+            }
+          ], 
+          "fullId": "TestFlag::n3", 
+          "group": "_root::n3", 
+          "id": "n3", 
+          "label": "Bill waiting for package", 
+          "type": "GROUP", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestFlag::n4", 
+          "group": "_root::n3", 
+          "id": "n4", 
+          "label": "OldBill", 
+          "type": "ROLE", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestFlag::n5", 
+          "group": "_root::n3", 
+          "id": "n5", 
+          "label": "END", 
+          "type": "END", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestFlag::n6", 
+          "group": "_root::n3", 
+          "id": "n6", 
+          "label": "$talked", 
+          "type": "FLAG", 
+          "visual": {}
+        }, 
+        {
+          "fullId": "TestFlag::n7", 
+          "group": "_root::n3", 
+          "id": "n7", 
+          "label": "$package_received", 
+          "type": "FLAG", 
+          "visual": {}
+        }
+      ], 
+      "fullId": "_root::n3", 
+      "group": false, 
+      "id": "n3", 
+      "label": "TestFlag", 
+      "type": "REF", 
+      "visual": {}
+    }
+  ]
+}

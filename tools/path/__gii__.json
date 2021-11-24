@@ -1,0 +1,6 @@
+{
+	"name"     : "path",
+	"priority" : 1,
+	"help"     : "retrieve project path info",
+	"autoload" : false
+}
